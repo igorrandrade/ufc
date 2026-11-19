@@ -2,6 +2,14 @@
 
 Projeto de Igor de Andrade Albuquerque para a Fase 2 de Business Intelligence e Analytics.
 
+## Resposta à pesquisa da Fase 1
+
+**Sim, liderar em golpes significativos esteve associado à vitória nas decisões deste recorte:** 514/660 = **77,88%**. A liderança não garantiu a vitória: houve 146 divergências (22,12%).
+
+**H1 recebe apoio descritivo:** 27,88 pontos percentuais acima da referência de 50%. **H2 recebe apoio descritivo:** 81,85% nas unânimes e 63,38% nas divididas, diferença de 18,47 pontos percentuais, na mesma direção nos três anos.
+
+A associação histórica não demonstra o efeito causal dos golpes nem o peso da contagem no voto dos juízes. Leia [a conclusão completa e o cumprimento dos objetivos](docs/CONCLUSAO.md). A quarta meta da Fase 1, de conferência contra fichas oficiais, permanece parcialmente atendida por bloqueio de acesso.
+
 ## O problema e o usuário
 
 Um analista de cobertura esportiva precisa verificar quando o líder em golpes significativos também é o vencedor oficial. A contagem bruta não substitui o julgamento round a round. A solução ajuda a conferir afirmações editoriais e localizar casos para análise individual. Não mede erro de arbitragem nem estima retorno financeiro.

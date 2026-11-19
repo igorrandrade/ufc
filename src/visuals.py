@@ -6,6 +6,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from .pipeline import ROOT
+from .conclusions import build as build_conclusions
 
 def build():
     out=ROOT/'outputs';b=pd.read_csv(ROOT/'data/processed/bouts.csv');r=pd.read_csv(ROOT/'data/processed/rounds.csv');p=pd.read_csv(out/'predictions_2024.csv')
@@ -15,6 +16,7 @@ def build():
              '__PRED__':p.to_json(orient='records',force_ascii=False),'__METRICS__':json.dumps(m,ensure_ascii=False),
              '__QUALITY__':json.dumps(q,ensure_ascii=False),'__CHECKS__':json.dumps(checks,ensure_ascii=False)}
     page=(ROOT/'src/dashboard_template.html').read_text(encoding='utf-8')
+    page=page.replace('__CONCLUSION__', build_conclusions()[1])
     for key,value in mapping.items():page=page.replace(key,value.replace('</','<\\/'))
     (ROOT/'docs/index.html').write_text(page,encoding='utf-8')
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.spines.top':False,'axes.spines.right':False,'axes.titleweight':'bold','axes.labelcolor':'#122235','text.color':'#122235'})

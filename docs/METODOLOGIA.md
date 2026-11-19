@@ -44,3 +44,7 @@ Responsável proposto: autor/analista editorial. Atualização por lote quando h
 Antes de publicação de uma afirmação editorial, conferir a ficha e o resultado oficial. Sugestão de uso: consultar divergências, examinar rounds e contexto e redigir com denominador e período. Não há mensuração real de redução de tempo, aumento de audiência ou retorno financeiro neste projeto.
 
 Referências técnicas: Aulas 6 a 10 fornecidas pela disciplina; Google Colab FAQ; scikit-learn LogisticRegression e Common pitfalls. Fonte esportiva: UFCStats via snapshot Greco1899 indicado no README.
+
+## Respostas à Fase 1
+
+A conclusão em [CONCLUSAO.md](CONCLUSAO.md) responde à pergunta central, H1, H2, robustez e objetivos. Ela é gerada por `src/conclusions.py` a partir dos KPIs efetivamente calculados. O projeto mantém o recorte e o delineamento observacional da Fase 1. A substituição do Streamlit pelo Colab atende às plataformas permitidas na Fase 2; o modelo preditivo é uma extensão exigida nesta fase e não altera as hipóteses originais.
