@@ -1,0 +1,20 @@
+[
+  {
+    "file": "ufc_event_details.csv",
+    "bytes": 103180,
+    "sha256": "07355c6e414bb5932a7a0f97e4088388ff7391876b7a9ab792433c83f5285841",
+    "url": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/c742842f29466758fedc3906dbad28d6d320a8da/ufc_event_details.csv"
+  },
+  {
+    "file": "ufc_fight_results.csv",
+    "bytes": 2117066,
+    "sha256": "b99d94a82984f07ec34d9f04423fd7edd67ea28c365621a144e05aec64f3a840",
+    "url": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/c742842f29466758fedc3906dbad28d6d320a8da/ufc_fight_results.csv"
+  },
+  {
+    "file": "ufc_fight_stats.csv",
+    "bytes": 7708125,
+    "sha256": "f5b316d5e745bd89da921b2c9711ec9209c2fa39dcbcd80bcb063b62d9175bcb",
+    "url": "https://raw.githubusercontent.com/Greco1899/scrape_ufc_stats/c742842f29466758fedc3906dbad28d6d320a8da/ufc_fight_stats.csv"
+  }
+]

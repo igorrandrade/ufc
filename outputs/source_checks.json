@@ -1,0 +1,110 @@
+[
+  {
+    "bout_id": "0366e183296fea07",
+    "url": "http://ufcstats.com/fight-details/0366e183296fea07",
+    "checked_at": "2026-11-18T19:38:31.098162+00:00",
+    "field_validation": "pendente",
+    "http_status": 200,
+    "access": "bloqueio de acesso; resposta sem tabela da luta",
+    "error": "HTTP 200 trouxe página de verificação de navegador, sem estatísticas."
+  },
+  {
+    "bout_id": "04e2d50c24a88dbd",
+    "url": "http://ufcstats.com/fight-details/04e2d50c24a88dbd",
+    "checked_at": "2026-11-18T19:38:31.099014+00:00",
+    "field_validation": "pendente",
+    "http_status": 200,
+    "access": "bloqueio de acesso; resposta sem tabela da luta",
+    "error": "HTTP 200 trouxe página de verificação de navegador, sem estatísticas."
+  },
+  {
+    "bout_id": "029f5c36820fdc09",
+    "url": "http://ufcstats.com/fight-details/029f5c36820fdc09",
+    "checked_at": "2026-11-18T19:38:31.099628+00:00",
+    "field_validation": "pendente",
+    "http_status": 200,
+    "access": "bloqueio de acesso; resposta sem tabela da luta",
+    "error": "HTTP 200 trouxe página de verificação de navegador, sem estatísticas."
+  },
+  {
+    "bout_id": "0489b42ac0ab6d4b",
+    "url": "http://ufcstats.com/fight-details/0489b42ac0ab6d4b",
+    "checked_at": "2026-11-18T19:38:31.100258+00:00",
+    "field_validation": "pendente",
+    "http_status": 200,
+    "access": "bloqueio de acesso; resposta sem tabela da luta",
+    "error": "HTTP 200 trouxe página de verificação de navegador, sem estatísticas."
+  },
+  {
+    "bout_id": "06d9fb9c995f1e4f",
+    "url": "http://ufcstats.com/fight-details/06d9fb9c995f1e4f",
+    "checked_at": "2026-11-18T19:38:38.931944+00:00",
+    "field_validation": "pendente",
+    "http_status": 200,
+    "access": "bloqueio de acesso; resposta sem tabela da luta",
+    "error": "HTTP 200 trouxe página de verificação de navegador, sem estatísticas."
+  },
+  {
+    "bout_id": "0732e6b6eb0a607d",
+    "url": "http://ufcstats.com/fight-details/0732e6b6eb0a607d",
+    "checked_at": "2026-11-18T19:38:38.942794+00:00",
+    "field_validation": "pendente",
+    "http_status": 200,
+    "access": "bloqueio de acesso; resposta sem tabela da luta",
+    "error": "HTTP 200 trouxe página de verificação de navegador, sem estatísticas."
+  },
+  {
+    "bout_id": "009feda296ae589c",
+    "url": "http://ufcstats.com/fight-details/009feda296ae589c",
+    "checked_at": "2026-11-18T19:38:38.950231+00:00",
+    "field_validation": "pendente",
+    "http_status": 200,
+    "access": "bloqueio de acesso; resposta sem tabela da luta",
+    "error": "HTTP 200 trouxe página de verificação de navegador, sem estatísticas."
+  },
+  {
+    "bout_id": "0197a61472fc351d",
+    "url": "http://ufcstats.com/fight-details/0197a61472fc351d",
+    "checked_at": "2026-11-18T19:38:38.952332+00:00",
+    "field_validation": "pendente",
+    "http_status": 200,
+    "access": "bloqueio de acesso; resposta sem tabela da luta",
+    "error": "HTTP 200 trouxe página de verificação de navegador, sem estatísticas."
+  },
+  {
+    "bout_id": "01f7c28804746979",
+    "url": "http://ufcstats.com/fight-details/01f7c28804746979",
+    "checked_at": "2026-11-18T19:38:44.463845+00:00",
+    "field_validation": "pendente",
+    "http_status": 200,
+    "access": "bloqueio de acesso; resposta sem tabela da luta",
+    "error": "HTTP 200 trouxe página de verificação de navegador, sem estatísticas."
+  },
+  {
+    "bout_id": "059f5cf0e9e37627",
+    "url": "http://ufcstats.com/fight-details/059f5cf0e9e37627",
+    "checked_at": "2026-11-18T19:38:44.487668+00:00",
+    "field_validation": "pendente",
+    "http_status": 200,
+    "access": "bloqueio de acesso; resposta sem tabela da luta",
+    "error": "HTTP 200 trouxe página de verificação de navegador, sem estatísticas."
+  },
+  {
+    "bout_id": "01432891260084a4",
+    "url": "http://ufcstats.com/fight-details/01432891260084a4",
+    "checked_at": "2026-11-18T19:38:44.496513+00:00",
+    "field_validation": "pendente",
+    "http_status": 200,
+    "access": "bloqueio de acesso; resposta sem tabela da luta",
+    "error": "HTTP 200 trouxe página de verificação de navegador, sem estatísticas."
+  },
+  {
+    "bout_id": "02ec66f311dce539",
+    "url": "http://ufcstats.com/fight-details/02ec66f311dce539",
+    "checked_at": "2026-11-18T19:38:44.513715+00:00",
+    "field_validation": "pendente",
+    "http_status": 200,
+    "access": "bloqueio de acesso; resposta sem tabela da luta",
+    "error": "HTTP 200 trouxe página de verificação de navegador, sem estatísticas."
+  }
+]

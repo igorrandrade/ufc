@@ -1,0 +1,189 @@
+{
+  "task": "Probabilidade de o líder único em golpes significativos vencer a decisão, dados os três rounds completos.",
+  "prediction_time": "Após os três rounds; avaliação retrospectiva em decisões unânimes/divididas. Não é previsão pré-luta nem serviço ao vivo.",
+  "target": "1 = concordância; 0 = divergência",
+  "features": [
+    "sig_margin",
+    "attempt_margin",
+    "accuracy_margin",
+    "round_margin",
+    "td_landed_margin",
+    "kd_margin",
+    "control_seconds_margin"
+  ],
+  "validation": [
+    {
+      "C": 0.1,
+      "n": 209,
+      "accuracy": 0.8038277511961722,
+      "balanced_accuracy": 0.6167644705254735,
+      "auc": 0.8464923979727927,
+      "log_loss": 0.3850351589557614,
+      "brier": 0.12376708442024184,
+      "precision_concordance": 0.824468085106383,
+      "recall_concordance": 0.950920245398773,
+      "f1_concordance": 0.8831908831908832,
+      "recall_divergence": 0.2826086956521739,
+      "confusion_matrix": [
+        [
+          13,
+          33
+        ],
+        [
+          8,
+          155
+        ]
+      ]
+    },
+    {
+      "C": 1.0,
+      "n": 209,
+      "accuracy": 0.7990430622009569,
+      "balanced_accuracy": 0.629301146972526,
+      "auc": 0.8339557215257402,
+      "log_loss": 0.39227560074034723,
+      "brier": 0.12752627985478215,
+      "precision_concordance": 0.8306010928961749,
+      "recall_concordance": 0.9325153374233128,
+      "f1_concordance": 0.8786127167630058,
+      "recall_divergence": 0.32608695652173914,
+      "confusion_matrix": [
+        [
+          15,
+          31
+        ],
+        [
+          11,
+          152
+        ]
+      ]
+    },
+    {
+      "C": 10.0,
+      "n": 209,
+      "accuracy": 0.8086124401913876,
+      "balanced_accuracy": 0.6510402774073085,
+      "auc": 0.8288877033875701,
+      "log_loss": 0.4021143978945263,
+      "brier": 0.12997059979041486,
+      "precision_concordance": 0.8397790055248618,
+      "recall_concordance": 0.9325153374233128,
+      "f1_concordance": 0.8837209302325582,
+      "recall_divergence": 0.3695652173913043,
+      "confusion_matrix": [
+        [
+          17,
+          29
+        ],
+        [
+          11,
+          152
+        ]
+      ]
+    }
+  ],
+  "selected_C": 0.1,
+  "split": {
+    "train_2022": 204,
+    "validation_2023": 209,
+    "final_train_2022_2023": 413,
+    "test_2024": 247
+  },
+  "test_model": {
+    "n": 247,
+    "accuracy": 0.854251012145749,
+    "balanced_accuracy": 0.7247990105132962,
+    "auc": 0.8359101216244073,
+    "log_loss": 0.3693910220598334,
+    "brier": 0.11429246048483122,
+    "precision_concordance": 0.8857142857142857,
+    "recall_concordance": 0.9393939393939394,
+    "f1_concordance": 0.9117647058823529,
+    "recall_divergence": 0.5102040816326531,
+    "confusion_matrix": [
+      [
+        25,
+        24
+      ],
+      [
+        12,
+        186
+      ]
+    ]
+  },
+  "test_baseline": {
+    "n": 247,
+    "accuracy": 0.8016194331983806,
+    "balanced_accuracy": 0.5,
+    "auc": 0.5,
+    "log_loss": 0.5019990252004078,
+    "brier": 0.16035696477968492,
+    "precision_concordance": 0.8016194331983806,
+    "recall_concordance": 1.0,
+    "f1_concordance": 0.8898876404494382,
+    "recall_divergence": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        49
+      ],
+      [
+        0,
+        198
+      ]
+    ]
+  },
+  "baseline_probability": 0.7651331719128329,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.8.0"
+  },
+  "test_by_method": {
+    "Dividida": {
+      "n": 59,
+      "accuracy": 0.6779661016949152,
+      "balanced_accuracy": 0.5967105263157895,
+      "auc": 0.5763157894736842,
+      "log_loss": 0.6747318039353478,
+      "brier": 0.22649651971390622,
+      "precision_concordance": 0.7333333333333333,
+      "recall_concordance": 0.825,
+      "f1_concordance": 0.7764705882352941,
+      "recall_divergence": 0.3684210526315789,
+      "confusion_matrix": [
+        [
+          7,
+          12
+        ],
+        [
+          7,
+          33
+        ]
+      ]
+    },
+    "Unânime": {
+      "n": 188,
+      "accuracy": 0.9095744680851063,
+      "balanced_accuracy": 0.7841772151898734,
+      "auc": 0.9204641350210971,
+      "log_loss": 0.27356598944996446,
+      "brier": 0.0790794844501747,
+      "precision_concordance": 0.9272727272727272,
+      "recall_concordance": 0.9683544303797469,
+      "f1_concordance": 0.9473684210526315,
+      "recall_divergence": 0.6,
+      "confusion_matrix": [
+        [
+          18,
+          12
+        ],
+        [
+          5,
+          153
+        ]
+      ]
+    }
+  }
+}

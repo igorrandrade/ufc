@@ -1,0 +1,142 @@
+{
+  "all": {
+    "n": 665,
+    "C": 514,
+    "D": 146,
+    "E": 5,
+    "concordance": 77.87878787878788,
+    "divergence": 22.12121212121212,
+    "coverage": 99.24812030075188,
+    "sensitivity_low": 77.29323308270676,
+    "sensitivity_high": 78.04511278195488
+  },
+  "by_method": {
+    "Dividida": {
+      "n": 144,
+      "C": 90,
+      "D": 52,
+      "E": 2,
+      "concordance": 63.38028169014085,
+      "divergence": 36.61971830985915,
+      "coverage": 98.61111111111111,
+      "sensitivity_low": 62.5,
+      "sensitivity_high": 63.888888888888886
+    },
+    "Unânime": {
+      "n": 521,
+      "C": 424,
+      "D": 94,
+      "E": 3,
+      "concordance": 81.85328185328186,
+      "divergence": 18.146718146718147,
+      "coverage": 99.42418426103647,
+      "sensitivity_low": 81.38195777351248,
+      "sensitivity_high": 81.95777351247601
+    }
+  },
+  "by_year": {
+    "2022": {
+      "n": 205,
+      "C": 153,
+      "D": 51,
+      "E": 1,
+      "concordance": 75.0,
+      "divergence": 25.0,
+      "coverage": 99.51219512195122,
+      "sensitivity_low": 74.63414634146342,
+      "sensitivity_high": 75.1219512195122
+    },
+    "2023": {
+      "n": 210,
+      "C": 163,
+      "D": 46,
+      "E": 1,
+      "concordance": 77.99043062200957,
+      "divergence": 22.00956937799043,
+      "coverage": 99.52380952380952,
+      "sensitivity_low": 77.61904761904762,
+      "sensitivity_high": 78.0952380952381
+    },
+    "2024": {
+      "n": 250,
+      "C": 198,
+      "D": 49,
+      "E": 3,
+      "concordance": 80.16194331983806,
+      "divergence": 19.838056680161944,
+      "coverage": 98.8,
+      "sensitivity_low": 79.2,
+      "sensitivity_high": 80.4
+    }
+  },
+  "by_year_method": {
+    "2022 Dividida": {
+      "n": 45,
+      "C": 28,
+      "D": 17,
+      "E": 0,
+      "concordance": 62.22222222222222,
+      "divergence": 37.77777777777778,
+      "coverage": 100.0,
+      "sensitivity_low": 62.22222222222222,
+      "sensitivity_high": 62.22222222222222
+    },
+    "2022 Unânime": {
+      "n": 160,
+      "C": 125,
+      "D": 34,
+      "E": 1,
+      "concordance": 78.61635220125787,
+      "divergence": 21.38364779874214,
+      "coverage": 99.375,
+      "sensitivity_low": 78.125,
+      "sensitivity_high": 78.75
+    },
+    "2023 Dividida": {
+      "n": 39,
+      "C": 22,
+      "D": 16,
+      "E": 1,
+      "concordance": 57.89473684210526,
+      "divergence": 42.10526315789474,
+      "coverage": 97.43589743589743,
+      "sensitivity_low": 56.41025641025641,
+      "sensitivity_high": 58.97435897435897
+    },
+    "2023 Unânime": {
+      "n": 171,
+      "C": 141,
+      "D": 30,
+      "E": 0,
+      "concordance": 82.45614035087719,
+      "divergence": 17.54385964912281,
+      "coverage": 100.0,
+      "sensitivity_low": 82.45614035087719,
+      "sensitivity_high": 82.45614035087719
+    },
+    "2024 Dividida": {
+      "n": 60,
+      "C": 40,
+      "D": 19,
+      "E": 1,
+      "concordance": 67.79661016949153,
+      "divergence": 32.20338983050848,
+      "coverage": 98.33333333333333,
+      "sensitivity_low": 66.66666666666667,
+      "sensitivity_high": 68.33333333333333
+    },
+    "2024 Unânime": {
+      "n": 190,
+      "C": 158,
+      "D": 30,
+      "E": 2,
+      "concordance": 84.04255319148936,
+      "divergence": 15.957446808510639,
+      "coverage": 98.94736842105263,
+      "sensitivity_low": 83.15789473684211,
+      "sensitivity_high": 84.21052631578948
+    }
+  },
+  "H1_excess_pp": 27.878787878787875,
+  "H2_difference_pp": 18.47300016314101
+}

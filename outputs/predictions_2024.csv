@@ -1,0 +1,248 @@
+bout_id,date,method,leader,other,winner,status,target,probability,predicted,baseline_probability
+477c3b9de012e4b3,2024-01-13,Unânime,Farid Basharat,Taylor Lapilus,Farid Basharat,C,1,0.877167928247908,1,0.7651331719128329
+5f622d812b8f407f,2024-01-13,Unânime,Preston Parsons,Matthew Semelsberger,Preston Parsons,C,1,0.9522546817560569,1,0.7651331719128329
+6f13fe34cb3ca906,2024-01-13,Unânime,Andrei Arlovski,Waldo Cortes Acosta,Waldo Cortes Acosta,D,0,0.7655043469283862,1,0.7651331719128329
+a8239866e1222eae,2024-01-13,Unânime,Mario Bautista,Ricky Simon,Mario Bautista,C,1,0.845422254153223,1,0.7651331719128329
+1a7cd191f0cf160c,2024-01-20,Unânime,Arnold Allen,Movsar Evloev,Movsar Evloev,D,0,0.24241477446791493,0,0.7651331719128329
+331ddc1141e934d1,2024-01-20,Dividida,Sean Woodson,Charles Jourdain,Sean Woodson,C,1,0.8263111960717288,1,0.7651331719128329
+43d90683078fcee5,2024-01-20,Dividida,Serhiy Sidey,Ramon Taveras,Ramon Taveras,D,0,0.4361277881032403,0,0.7651331719128329
+670e4754d8d3d172,2024-01-20,Unânime,Garrett Armfield,Brad Katona,Garrett Armfield,C,1,0.7671131270791611,1,0.7651331719128329
+ba5005d1116fa45f,2024-01-20,Dividida,Chris Curtis,Marc-Andre Barriault,Chris Curtis,C,1,0.8217303948580771,1,0.7651331719128329
+7b1882dc76786d77,2024-02-03,Unânime,Natalia Silva,Viviane Araujo,Natalia Silva,C,1,0.3928105711348515,0,0.7651331719128329
+ca7d61e167d7789c,2024-02-03,Unânime,Charles Johnson,Azat Maksum,Charles Johnson,C,1,0.6939835270293212,1,0.7651331719128329
+df9847839c73a678,2024-02-03,Unânime,Jamal Pogues,Thomas Petersen,Jamal Pogues,C,1,0.3430893909414509,0,0.7651331719128329
+e1930496b33fa636,2024-02-03,Unânime,JeongYeong Lee,Blake Bilder,JeongYeong Lee,C,1,0.9107308849386695,1,0.7651331719128329
+e396c509fb47b037,2024-02-03,Unânime,MarQuel Mederos,Landon Quinones,MarQuel Mederos,C,1,0.7222338807734311,1,0.7651331719128329
+08f7a60bd84a6b3c,2024-02-10,Dividida,Jeremiah Wells,Max Griffin,Max Griffin,D,0,0.5729484192930353,1,0.7651331719128329
+17050a7b673dc49d,2024-02-10,Unânime,Ihor Potieria,Robert Bryczek,Ihor Potieria,C,1,0.9698216893995045,1,0.7651331719128329
+5304956aada097e8,2024-02-10,Unânime,Michael Johnson,Darrius Flowers,Michael Johnson,C,1,0.9241586025481358,1,0.7651331719128329
+c3986c1a56a6e94d,2024-02-10,Unânime,Loma Lookboonmee,Bruna Brasil,Loma Lookboonmee,C,1,0.826598676024914,1,0.7651331719128329
+dbfd7616dec2b6d5,2024-02-10,Unânime,Marcin Prachnio,Devin Clark,Marcin Prachnio,C,1,0.92663568550028,1,0.7651331719128329
+edf46d6962be7e8d,2024-02-10,Dividida,Bolaji Oki,Timmy Cuamba,Bolaji Oki,C,1,0.750536319458591,1,0.7651331719128329
+01432891260084a4,2024-02-17,Unânime,Robert Whittaker,Paulo Costa,Robert Whittaker,C,1,0.8676937224664795,1,0.7651331719128329
+2aeb3ec2d8c05dc8,2024-02-17,Unânime,Amanda Lemos,Mackenzie Dern,Amanda Lemos,C,1,0.9187390411300707,1,0.7651331719128329
+8fb0092430448368,2024-02-17,Dividida,Ian Machado Garry,Geoff Neal,Ian Machado Garry,C,1,0.6868813952279409,1,0.7651331719128329
+9785420602b452f7,2024-02-17,Unânime,Merab Dvalishvili,Henry Cejudo,Merab Dvalishvili,C,1,0.9501773056742415,1,0.7651331719128329
+9ddaa62cc806958d,2024-02-17,Unânime,Oban Elliott,Val Woodburn,Oban Elliott,C,1,0.9569423079798597,1,0.7651331719128329
+b7d238437d6644ce,2024-02-17,Unânime,Miranda Maverick,Andrea Lee,Miranda Maverick,C,1,0.9262822639435068,1,0.7651331719128329
+e92fb5c609e20b49,2024-02-17,Unânime,Rinya Nakamura,Carlos Vera,Rinya Nakamura,C,1,0.9880439183148028,1,0.7651331719128329
+6e4acb2aaa2cee56,2024-02-24,Unânime,Yazmin Jauregui,Sam Hughes,Yazmin Jauregui,C,1,0.6059072492495984,1,0.7651331719128329
+93ddc6b233d1956a,2024-02-24,Dividida,Victor Altamirano,Felipe dos Santos,Felipe dos Santos,D,0,0.9246513840269295,1,0.7651331719128329
+a376f6d5806d0c90,2024-02-24,Dividida,Fares Ziam,Claudio Puelles,Fares Ziam,C,1,0.7007518030731168,1,0.7651331719128329
+d1d3b6ab8a56e973,2024-02-24,Dividida,Jesus Aguilar,Mateus Mendonca,Jesus Aguilar,C,1,0.41239663920777847,0,0.7651331719128329
+ecbece0cbd60029e,2024-02-24,Unânime,Daniel Zellhuber,Francisco Prado,Daniel Zellhuber,C,1,0.7731623188913569,1,0.7651331719128329
+32bd7ed48f5aea7e,2024-03-02,Unânime,Eryk Anders,Jamie Pickett,Eryk Anders,C,1,0.8011944013026631,1,0.7651331719128329
+5a82757b553c40fc,2024-03-02,Unânime,Muhammad Mokaev,Alex Perez,Muhammad Mokaev,C,1,0.8214252400488051,1,0.7651331719128329
+a7d397cd0f2ac93a,2024-03-02,Unânime,Aiemann Zahabi,Javid Basharat,Aiemann Zahabi,C,1,0.5896379804330334,1,0.7651331719128329
+dcf5014e56649c2f,2024-03-02,Unânime,Umar Nurmagomedov,Bekzat Almakhan,Umar Nurmagomedov,C,1,0.9943899011783723,1,0.7651331719128329
+df3cc5ec78d05a71,2024-03-02,Unânime,Tyson Pedro,Vitor Petrino,Vitor Petrino,D,0,0.40106167261724246,0,0.7651331719128329
+270edfb687c0d20c,2024-03-09,Unânime,Michael Page,Kevin Holland,Michael Page,C,1,0.6024809428267244,1,0.7651331719128329
+33658a3ca932d15d,2024-03-09,Unânime,Maycee Barber,Katlyn Cerminara,Maycee Barber,C,1,0.8596986112595753,1,0.7651331719128329
+3677ce6c1ee06a83,2024-03-09,Dividida,Joanne Wood,Maryna Moroz,Joanne Wood,C,1,0.5371198130004274,1,0.7651331719128329
+3d3dde60e3d59c1c,2024-03-09,Unânime,Asu Almabayev,CJ Vergara,Asu Almabayev,C,1,0.9828129474195811,1,0.7651331719128329
+7bc7af11050e861b,2024-03-09,Unânime,Philipe Lins,Ion Cutelaba,Philipe Lins,C,1,0.946533235445541,1,0.7651331719128329
+8baff440b82afd2b,2024-03-09,Unânime,Mateusz Gamrot,Rafael Dos Anjos,Mateusz Gamrot,C,1,0.93145519207545,1,0.7651331719128329
+9861b6d04e6ed43c,2024-03-09,Unânime,Petr Yan,Song Yadong,Petr Yan,C,1,0.8243476050186214,1,0.7651331719128329
+ebb758b49e82d0ed,2024-03-09,Unânime,Kyler Phillips,Pedro Munhoz,Kyler Phillips,C,1,0.9048869211279562,1,0.7651331719128329
+35f9beb94b4ef9e2,2024-03-16,Dividida,Ovince Saint Preux,Kennedy Nzechukwu,Ovince Saint Preux,C,1,0.9518931438825969,1,0.7651331719128329
+711ec0545552455b,2024-03-16,Unânime,Chelsea Chandler,Josiane Nunes,Chelsea Chandler,C,1,0.8898280908551173,1,0.7651331719128329
+acc7392d48cc09a0,2024-03-16,Dividida,Christian Rodriguez,Isaac Dulgarian,Christian Rodriguez,C,1,0.37513053880993746,0,0.7651331719128329
+c26f27667c230391,2024-03-16,Dividida,Josh Culibao,Danny Silva,Danny Silva,D,0,0.6294011008365777,1,0.7651331719128329
+f1cbd73e7be64d28,2024-03-16,Unânime,Chad Anheliger,Charalampos Grigoriou,Chad Anheliger,C,1,0.7737389434788791,1,0.7651331719128329
+0e6782b758451063,2024-03-23,Unânime,Jarno Errens,Steven Nguyen,Jarno Errens,C,1,0.9651634238352325,1,0.7651331719128329
+3223b7e196a07224,2024-03-23,Unânime,Mick Parkin,Mohammed Usman,Mick Parkin,C,1,0.8472867655869236,1,0.7651331719128329
+48ff3f1bcefbf965,2024-03-23,Unânime,Miles Johns,Cody Gibson,Miles Johns,C,1,0.8314285318612573,1,0.7651331719128329
+cd6452a463ec8a28,2024-03-23,Unânime,Karl Williams,Justin Tafa,Karl Williams,C,1,0.9888120958913427,1,0.7651331719128329
+de7cb625bdec0f91,2024-03-23,Unânime,Trey Ogden,Kurt Holobaugh,Trey Ogden,C,1,0.9585580541144475,1,0.7651331719128329
+f1c3abce15ef053e,2024-03-23,Unânime,Daria Zhelezniakova,Montse Rendon,Daria Zhelezniakova,C,1,0.7217198881689121,1,0.7651331719128329
+17e8ab0065e9085f,2024-03-30,Unânime,Caolan Loughran,Angel Pacheco,Caolan Loughran,C,1,0.9559924066280033,1,0.7651331719128329
+99dc6d45cbdfa322,2024-03-30,Unânime,Loopy Godinez,Virna Jandiroba,Virna Jandiroba,D,0,0.6106158505672499,1,0.7651331719128329
+eb9f9f61507497a5,2024-03-30,Dividida,Chidi Njokuani,Rhys McKee,Chidi Njokuani,C,1,0.8196657707193088,1,0.7651331719128329
+0b9cd718d7e329e8,2024-04-06,Unânime,Court McGee,Alex Morono,Alex Morono,D,0,0.9222705406274299,1,0.7651331719128329
+188e6416157e5a1f,2024-04-06,Unânime,Germaine de Randamie,Norma Dumont,Norma Dumont,D,0,0.34659389863447954,0,0.7651331719128329
+32375b4435fea5e6,2024-04-06,Dividida,Chepe Mariscal,Morgan Charriere,Chepe Mariscal,C,1,0.7147590707914107,1,0.7651331719128329
+47f8812a335b6ce9,2024-04-06,Unânime,Charlie Campbell,Trevor Peek,Charlie Campbell,C,1,0.7506968823371767,1,0.7651331719128329
+5c3b8819dbe98114,2024-04-06,Unânime,Victor Hugo,Pedro Falcao,Victor Hugo,C,1,0.8359520492060455,1,0.7651331719128329
+9c22ddb8d8fc1838,2024-04-06,Dividida,Damon Jackson,Alexander Hernandez,Damon Jackson,C,1,0.8411435269365448,1,0.7651331719128329
+ff5a8078ea85bbc7,2024-04-06,Unânime,Lukasz Brzeski,Valter Walker,Lukasz Brzeski,C,1,0.5336273346313732,1,0.7651331719128329
+01f7c28804746979,2024-04-13,Dividida,Arman Tsarukyan,Charles Oliveira,Arman Tsarukyan,C,1,0.9473161282939373,1,0.7651331719128329
+603afedc31d95999,2024-04-13,Dividida,Jessica Andrade,Marina Rodriguez,Jessica Andrade,C,1,0.8552719901731922,1,0.7651331719128329
+d95f21817a56eb05,2024-04-13,Unânime,Aljamain Sterling,Calvin Kattar,Aljamain Sterling,C,1,0.9939557110386449,1,0.7651331719128329
+efdad54c8550e6e0,2024-04-13,Unânime,King Green,Jim Miller,King Green,C,1,0.9955795069296702,1,0.7651331719128329
+0976778a6e6cf8a8,2024-04-27,Dividida,Gabriel Benitez,Maheshate,Maheshate,D,0,0.8600841593722608,1,0.7651331719128329
+417049c7a3d65ccc,2024-04-27,Unânime,Caio Machado,Don'Tale Mayes,Don'Tale Mayes,D,0,0.33798313115587514,0,0.7651331719128329
+45de6d0b9cf5451c,2024-04-27,Unânime,Ariane da Silva,Karine Silva,Karine Silva,D,0,0.4128602742579723,0,0.7651331719128329
+4915c8a588513c22,2024-04-27,Unânime,Ketlen Souza,Marnic Mann,Ketlen Souza,C,1,0.9382215416748133,1,0.7651331719128329
+681cd3cc6299d652,2024-04-27,Unânime,Michal Figlak,Austin Hubbard,Austin Hubbard,D,0,0.5996988928756882,1,0.7651331719128329
+7ca5604d99220e88,2024-04-27,Unânime,David Onama,Jonathan Pearce,David Onama,C,1,0.3094196320115764,0,0.7651331719128329
+2faf5b8d708f8e94,2024-05-04,Unânime,Drakkar Klose,Joaquim Silva,Drakkar Klose,C,1,0.6772527913762171,1,0.7651331719128329
+4661e9ca9354021e,2024-05-04,Unânime,Ernesta Kareckaite,Dione Barbosa,Dione Barbosa,D,0,0.5092579016752626,1,0.7651331719128329
+89db7aca37b87711,2024-05-04,Unânime,Ismael Bonfim,Vinc Pichel,Ismael Bonfim,C,1,0.9091214206666259,1,0.7651331719128329
+8a121f9c48f3773c,2024-05-04,Unânime,Myktybek Orolbai,Elves Brener,Myktybek Orolbai,C,1,0.9552409451497234,1,0.7651331719128329
+b3d88eaea611a4a8,2024-05-04,Unânime,Jose Aldo,Jonathan Martinez,Jose Aldo,C,1,0.8837954319735847,1,0.7651331719128329
+c84a29f426f1aab7,2024-05-04,Unânime,Iasmin Lucindo,Karolina Kowalkiewicz,Iasmin Lucindo,C,1,0.977331981276354,1,0.7651331719128329
+13d8d5cd83e5b57e,2024-05-11,Dividida,Tecia Pennington,Tabatha Ricci,Tabatha Ricci,D,0,0.6203708844827491,1,0.7651331719128329
+4b45f190122a1ce1,2024-05-11,Unânime,Charles Johnson,Jake Hadley,Charles Johnson,C,1,0.8984148059658442,1,0.7651331719128329
+8aa07b6cc40f0cb2,2024-05-11,Unânime,Sean Woodson,Alex Caceres,Sean Woodson,C,1,0.7104209706124556,1,0.7651331719128329
+b78a222fb448aed4,2024-05-11,Unânime,Joaquin Buckley,Nursulton Ruziboev,Joaquin Buckley,C,1,0.9911937120052229,1,0.7651331719128329
+ccf3b6eda4c2a564,2024-05-11,Unânime,Veronica Hardy,JJ Aldrich,Veronica Hardy,C,1,0.44904156362128117,0,0.7651331719128329
+e98eb6de29c62c9c,2024-05-11,Unânime,Waldo Cortes Acosta,Robelis Despaigne,Waldo Cortes Acosta,C,1,0.9748434427770165,1,0.7651331719128329
+ec5d705232983b87,2024-05-11,Unânime,Billy Ray Goff,Trey Waters,Trey Waters,D,0,0.8615248290766454,1,0.7651331719128329
+069df63733dcf697,2024-05-18,Dividida,Emily Ducote,Vanessa Demopoulos,Vanessa Demopoulos,D,0,0.8920869903847388,1,0.7651331719128329
+20220ace492af368,2024-05-18,Unânime,Themba Gorimbo,Ramiz Brahimaj,Themba Gorimbo,C,1,0.9859761390029154,1,0.7651331719128329
+63605e9f3e71d738,2024-05-18,Unânime,Kleydson Rodrigues,Alatengheili,Alatengheili,D,0,0.3558381666793427,0,0.7651331719128329
+fc2bdd67c1a056a4,2024-05-18,Unânime,Abus Magomedov,Warlley Alves,Abus Magomedov,C,1,0.9768852873578694,1,0.7651331719128329
+2554b31a07f34e1a,2024-06-01,Unânime,Ailin Perez,Joselyne Edwards,Ailin Perez,C,1,0.9415624283890137,1,0.7651331719128329
+7d9bb6fda0ea1ee0,2024-06-01,Unânime,Bassil Hafez,Mickey Gall,Bassil Hafez,C,1,0.805123425620554,1,0.7651331719128329
+b5d5b8e06ccb70a3,2024-06-01,Unânime,Niko Price,Alex Morono,Niko Price,C,1,0.8431775513217533,1,0.7651331719128329
+b7575b0ec9f81741,2024-06-01,Unânime,Jake Matthews,Phil Rowe,Jake Matthews,C,1,0.8725437423628793,1,0.7651331719128329
+cf306c4714530f31,2024-06-01,Unânime,Grant Dawson,Joe Solecki,Grant Dawson,C,1,0.9899595996487656,1,0.7651331719128329
+ee24be90a01f552e,2024-06-01,Dividida,Cesar Almeida,Roman Kopylov,Roman Kopylov,D,0,0.1576951277536956,0,0.7651331719128329
+f1d3eec12662d8d7,2024-06-01,Dividida,Andre Lima,Mitch Raposo,Andre Lima,C,1,0.8248632688457644,1,0.7651331719128329
+fd2d814a8a23798f,2024-06-01,Unânime,Randy Brown,Elizeu Zaleski dos Santos,Randy Brown,C,1,0.7146982879795308,1,0.7651331719128329
+251983e1bdae20fe,2024-06-08,Unânime,Ludovit Klein,Thiago Moises,Ludovit Klein,C,1,0.9872767290997881,1,0.7651331719128329
+393f9bc7b51791a6,2024-06-08,Unânime,Punahele Soriano,Miguel Baeza,Punahele Soriano,C,1,0.9990051526484055,1,0.7651331719128329
+4c0adccb34c1d995,2024-06-08,Unânime,Brad Katona,Jesse Butler,Brad Katona,C,1,0.9909292703326923,1,0.7651331719128329
+753735b48b1c20b9,2024-06-08,Unânime,Taylor Lapilus,Cody Stamann,Taylor Lapilus,C,1,0.8353261323164327,1,0.7651331719128329
+790a8cd528233e50,2024-06-08,Dividida,Denise Gomes,Eduarda Moura,Denise Gomes,C,1,0.7019597413867633,1,0.7651331719128329
+a91fdb21a7ff52e5,2024-06-08,Dividida,Andrea Lee,Montana De La Rosa,Montana De La Rosa,D,0,0.4839496310969865,0,0.7651331719128329
+b20640f9b2634de1,2024-06-08,Dividida,Puja Tomar,Rayanne dos Santos,Puja Tomar,C,1,0.5892942768549002,1,0.7651331719128329
+e976815e397c40e1,2024-06-08,Unânime,Daniel Marcos,John Castaneda,Daniel Marcos,C,1,0.9343472486844339,1,0.7651331719128329
+06713afc60301c0c,2024-06-15,Unânime,Josefine Knutsson,Julia Polastri,Josefine Knutsson,C,1,0.7755559114984367,1,0.7651331719128329
+19ef5890b20f903a,2024-06-15,Dividida,Carli Judice,Gabriella Fernandes,Gabriella Fernandes,D,0,0.7780749855605233,1,0.7651331719128329
+3b1438e9ec64990e,2024-06-15,Unânime,Asu Almabayev,Jose Johnson,Asu Almabayev,C,1,0.9919594872653758,1,0.7651331719128329
+6bdb93f9b4581bf6,2024-06-15,Unânime,Miles Johns,Douglas Silva de Andrade,Miles Johns,C,1,0.784342644071555,1,0.7651331719128329
+6f31285305881fe3,2024-06-15,Unânime,Nate Maness,Jimmy Flick,Nate Maness,C,1,0.9184668733378039,1,0.7651331719128329
+78a7bf038e56881d,2024-06-15,Unânime,Lucas Almeida,Timmy Cuamba,Lucas Almeida,C,1,0.6742396441480328,1,0.7651331719128329
+ab7bc93bdf4132c4,2024-06-15,Dividida,Adam Fugitt,Josh Quinlan,Adam Fugitt,C,1,0.7173439458100881,1,0.7651331719128329
+774fb0c0c1c2bc6a,2024-06-22,Dividida,Nasrat Haqparast,Jared Gordon,Nasrat Haqparast,C,1,0.5086477271162412,1,0.7651331719128329
+8db5cf5df713a7e9,2024-06-22,Unânime,Muin Gafurov,Kyung Ho Kang,Muin Gafurov,C,1,0.9329895893192521,1,0.7651331719128329
+8ddd53a7ed3754d5,2024-06-22,Unânime,Daniel Rodriguez,Kelvin Gastelum,Kelvin Gastelum,D,0,0.46754403627004204,0,0.7651331719128329
+cd3bb8a2824fbf22,2024-06-22,Unânime,Alexander Volkov,Sergei Pavlovich,Alexander Volkov,C,1,0.9020866493802357,1,0.7651331719128329
+de1acb6803ab3f14,2024-06-22,Dividida,Rinat Fakhretdinov,Nicolas Dalby,Rinat Fakhretdinov,C,1,0.7119082042613459,1,0.7651331719128329
+08489fdfb56ee19c,2024-06-29,Dividida,Andre Fili,Cub Swanson,Andre Fili,C,1,0.7544090966417032,1,0.7651331719128329
+2517029ff9c1a1a2,2024-06-29,Unânime,Gillian Robertson,Michelle Waterson-Gomez,Gillian Robertson,C,1,0.9952398316102106,1,0.7651331719128329
+3bbc222130d9dac7,2024-06-29,Dividida,Andrei Arlovski,Martin Buday,Martin Buday,D,0,0.8619072526863916,1,0.7651331719128329
+7856621db043423d,2024-06-29,Unânime,Rei Tsuruya,Carlos Hernandez,Rei Tsuruya,C,1,0.6257535285344294,1,0.7651331719128329
+bbe3d8a37a276511,2024-06-29,Unânime,Vinicius Oliveira,Ricky Simon,Vinicius Oliveira,C,1,0.8715406007083439,1,0.7651331719128329
+bf878c083a6b30ad,2024-06-29,Unânime,Roman Dolidze,Anthony Smith,Roman Dolidze,C,1,0.94258165788382,1,0.7651331719128329
+fbf77262d8da342b,2024-06-29,Unânime,Michael Page,Ian Machado Garry,Ian Machado Garry,D,0,0.29676756749392796,0,0.7651331719128329
+fc8ad0c7fc70dde7,2024-06-29,Unânime,Diego Lopes,Dan Ige,Diego Lopes,C,1,0.7347899256125107,1,0.7651331719128329
+582afc25875911d1,2024-07-13,Unânime,Jasmine Jasudavicius,Fatima Kline,Jasmine Jasudavicius,C,1,0.8779387516831952,1,0.7651331719128329
+d8e8d41282fc90dc,2024-07-13,Unânime,Josh Fremd,Andre Petroski,Andre Petroski,D,0,0.08722308974434323,0,0.7651331719128329
+dad759ec50508147,2024-07-13,Unânime,Gabriel Bonfim,Ange Loosa,Gabriel Bonfim,C,1,0.829628277178629,1,0.7651331719128329
+dff8e4ef87d69516,2024-07-13,Dividida,Muslim Salikhov,Santiago Ponzinibbio,Muslim Salikhov,C,1,0.4943053053193394,0,0.7651331719128329
+836e9bc5c1f6acd3,2024-07-20,Unânime,Thomas Petersen,Mohammed Usman,Thomas Petersen,C,1,0.8766886379373787,1,0.7651331719128329
+9eaa33f874bbb999,2024-07-20,Unânime,Kurt Holobaugh,Kaynan Kruschewsky,Kurt Holobaugh,C,1,0.5280144097265017,1,0.7651331719128329
+b3f1253d0a991791,2024-07-20,Unânime,Loik Radzhabov,Trey Ogden,Trey Ogden,D,0,0.30341471108817936,0,0.7651331719128329
+c3ef9edf73626521,2024-07-20,Unânime,Luana Carolina,Lucie Pudilova,Luana Carolina,C,1,0.8918595665842395,1,0.7651331719128329
+e655774643881e6c,2024-07-20,Unânime,Miranda Maverick,Dione Barbosa,Miranda Maverick,C,1,0.8715630331973209,1,0.7651331719128329
+16b0a16ab2e20fdb,2024-07-27,Unânime,Oban Elliott,Preston Parsons,Oban Elliott,C,1,0.6194388257124217,1,0.7651331719128329
+45e6a9b56ee3a9d1,2024-07-27,Unânime,Nathaniel Wood,Daniel Pineda,Nathaniel Wood,C,1,0.9447001047395254,1,0.7651331719128329
+678eda89a096dde8,2024-07-27,Unânime,Bruna Brasil,Molly McCann,Bruna Brasil,C,1,0.7223936777310055,1,0.7651331719128329
+8a2e28da18ba6a25,2024-07-27,Unânime,Arnold Allen,Giga Chikadze,Arnold Allen,C,1,0.7910954084480974,1,0.7651331719128329
+9d8c32c60df0e287,2024-07-27,Unânime,Jake Hadley,Caolan Loughran,Jake Hadley,C,1,0.7968878743951114,1,0.7651331719128329
+d6e240c47ba6034d,2024-07-27,Unânime,Muhammad Mokaev,Manel Kape,Muhammad Mokaev,C,1,0.8218702785178742,1,0.7651331719128329
+dff2ef8fdde8c502,2024-07-27,Dividida,Shauna Bannon,Alice Ardelean,Shauna Bannon,C,1,0.2357187742778447,0,0.7651331719128329
+f02fed4e98048471,2024-07-27,Unânime,Gregory Rodrigues,Christian Leroy Duncan,Gregory Rodrigues,C,1,0.9320433538380793,1,0.7651331719128329
+637f792270a0c746,2024-08-03,Unânime,Shamil Gaziev,Don'Tale Mayes,Shamil Gaziev,C,1,0.9446069116681658,1,0.7651331719128329
+77df662671ce11c5,2024-08-03,Unânime,Jordan Vucenic,Guram Kutateladze,Guram Kutateladze,D,0,0.6804090496804217,1,0.7651331719128329
+b38450d9aa0f52b8,2024-08-03,Unânime,Shara Magomedov,Michal Oleksiejczuk,Shara Magomedov,C,1,0.6705111029719248,1,0.7651331719128329
+bb85e207eba236bc,2024-08-03,Unânime,Marlon Vera,Deiveson Figueiredo,Deiveson Figueiredo,D,0,0.25093774336140695,0,0.7651331719128329
+d038ff5ac21094f3,2024-08-03,Unânime,Jai Herbert,Rolando Bedoya,Jai Herbert,C,1,0.8226675171801359,1,0.7651331719128329
+d0d74672150ddea3,2024-08-03,Unânime,Mackenzie Dern,Loopy Godinez,Mackenzie Dern,C,1,0.5464658922675933,1,0.7651331719128329
+e6851877e33d343f,2024-08-03,Unânime,Sedriques Dumas,Denis Tiuliulin,Sedriques Dumas,C,1,0.9318471346247693,1,0.7651331719128329
+f80143e1f3c3d319,2024-08-03,Dividida,Sam Hughes,Viktoriia Dudakova,Sam Hughes,C,1,0.7761465052968259,1,0.7651331719128329
+1b5d5af1bc0a34c7,2024-08-10,Unânime,Stephanie Luciano,Talita Alencar,Stephanie Luciano,C,1,0.9504966492296377,1,0.7651331719128329
+6aa89b7b5350b8e2,2024-08-10,Unânime,Chris Gutierrez,Quang Le,Chris Gutierrez,C,1,0.908712888890238,1,0.7651331719128329
+6bcaa0de4003cc41,2024-08-10,Unânime,Jhonata Diniz,Karl Williams,Jhonata Diniz,C,1,0.7217876728389016,1,0.7651331719128329
+7b4284bd3033a319,2024-08-10,Dividida,Nikolay Veretennikov,Danny Barlow,Danny Barlow,D,0,0.5493008841370003,1,0.7651331719128329
+a7ac1dfcdc083694,2024-08-10,Unânime,Karol Rosa,Pannie Kianzad,Karol Rosa,C,1,0.9383109356077718,1,0.7651331719128329
+e0b14afd93af5638,2024-08-10,Unânime,Yana Santos,Chelsea Chandler,Yana Santos,C,1,0.9555657096191674,1,0.7651331719128329
+e72a2130e7387637,2024-08-10,Unânime,Chepe Mariscal,Damon Jackson,Chepe Mariscal,C,1,0.9638712167766625,1,0.7651331719128329
+059f5cf0e9e37627,2024-08-17,Dividida,Dan Hooker,Mateusz Gamrot,Dan Hooker,C,1,0.31259844937744574,0,0.7651331719128329
+43ebfc8914a39061,2024-08-17,Dividida,Josh Culibao,Ricardo Ramos,Ricardo Ramos,D,0,0.9561190594033299,1,0.7651331719128329
+b9d5c77ae7a8109b,2024-08-17,Unânime,Casey O'Neill,Luana Santos,Casey O'Neill,C,1,0.8604651654493809,1,0.7651331719128329
+ce75f5ecbc0d3dfd,2024-08-17,Unânime,Tom Nolan,Alex Reyes,Tom Nolan,C,1,0.5263762861405895,1,0.7651331719128329
+dd3d8f7066c145b7,2024-08-17,Dividida,Jairzinho Rozenstruik,Tai Tuivasa,Jairzinho Rozenstruik,C,1,0.9353640841132603,1,0.7651331719128329
+ea824ac4b8ed8a35,2024-08-17,Unânime,Song Kenan,Ricky Glenn,Song Kenan,C,1,0.844037679893763,1,0.7651331719128329
+560f1e26c2a6690a,2024-08-24,Dividida,Dennis Buzukja,Francis Marshall,Francis Marshall,D,0,0.29822373898183574,0,0.7651331719128329
+70afe9e0d2422252,2024-08-24,Unânime,Angela Hill,Tabatha Ricci,Tabatha Ricci,D,0,0.4364242971911401,0,0.7651331719128329
+903d588b30a471e8,2024-08-24,Dividida,Jacqueline Cavalcanti,Josiane Nunes,Jacqueline Cavalcanti,C,1,0.9108342993699696,1,0.7651331719128329
+ba8eda6993922ba0,2024-08-24,Dividida,Viacheslav Borshchev,James Llontop,Viacheslav Borshchev,C,1,0.5870700129876952,1,0.7651331719128329
+d2caa1ddb9de7481,2024-08-24,Unânime,Zach Reese,Jose Daniel Medina,Zach Reese,C,1,0.9730988743602879,1,0.7651331719128329
+69bde5bae0d6ec4f,2024-09-07,Unânime,Felipe dos Santos,Andre Lima,Andre Lima,D,0,0.4436448209836512,0,0.7651331719128329
+6e9876d2be2bbd02,2024-09-07,Unânime,Gabriel Santos,Yizha,Gabriel Santos,C,1,0.9906426763364041,1,0.7651331719128329
+75fa9c0bb31caaa3,2024-09-07,Unânime,Trevor Peek,Yanal Ashmouz,Yanal Ashmouz,D,0,0.12818479609829875,0,0.7651331719128329
+bcfaf1dd78f12f97,2024-09-07,Unânime,Natalia Silva,Jessica Andrade,Natalia Silva,C,1,0.9381346283336321,1,0.7651331719128329
+f734b497add754af,2024-09-07,Unânime,Andre Petroski,Dylan Budka,Andre Petroski,C,1,0.9534805408039674,1,0.7651331719128329
+2335e75ce63805b6,2024-09-14,Unânime,Diego Lopes,Brian Ortega,Diego Lopes,C,1,0.9537885957933985,1,0.7651331719128329
+2397e2a92710705a,2024-09-14,Unânime,Norma Dumont,Irene Aldana,Norma Dumont,C,1,0.9631830581465024,1,0.7651331719128329
+27d98a8ee6608e27,2024-09-14,Dividida,Esteban Ribovics,Daniel Zellhuber,Esteban Ribovics,C,1,0.4512082015846682,0,0.7651331719128329
+3cdc6fea724be133,2024-09-14,Unânime,Raul Rosas Jr.,Aoriqileng,Raul Rosas Jr.,C,1,0.9474318735162325,1,0.7651331719128329
+78b506e5092a27fd,2024-09-14,Unânime,Ode Osbourne,Ronaldo Rodriguez,Ronaldo Rodriguez,D,0,0.5102002821176457,1,0.7651331719128329
+dae8ad2e03aa4a9a,2024-09-14,Unânime,Joshua Van,Edgar Chairez,Joshua Van,C,1,0.9405645665532505,1,0.7651331719128329
+19706d8ba0edf9cd,2024-09-28,Dividida,William Gomis,Joanderson Brito,William Gomis,C,1,0.6544056295810329,1,0.7651331719128329
+3599e9de4ae0e171,2024-09-28,Unânime,Oumar Sy,Da Woon Jung,Oumar Sy,C,1,0.9807689396974143,1,0.7651331719128329
+47d978a984a163aa,2024-09-28,Unânime,Victor Altamirano,Daniel Barez,Daniel Barez,D,0,0.1877095036916554,0,0.7651331719128329
+62ff1e5deb124ff5,2024-09-28,Unânime,Nassourdine Imavov,Brendan Allen,Nassourdine Imavov,C,1,0.7454333251445291,1,0.7651331719128329
+89b772f864acb637,2024-09-28,Dividida,Ion Cutelaba,Ivan Erslan,Ion Cutelaba,C,1,0.430347596214662,0,0.7651331719128329
+d063d46208c560b1,2024-09-28,Unânime,Taylor Lapilus,Vince Morales,Taylor Lapilus,C,1,0.8737510873211612,1,0.7651331719128329
+e01019fbfe0e9528,2024-09-28,Unânime,Ludovit Klein,Roosevelt Roberts,Ludovit Klein,C,1,0.9657523690673656,1,0.7651331719128329
+3d7d82fff71e395a,2024-10-05,Dividida,Jose Aldo,Mario Bautista,Mario Bautista,D,0,0.3591833561753559,0,0.7651331719128329
+58e5fc1914c4e641,2024-10-05,Unânime,Tecia Pennington,Carla Esparza,Tecia Pennington,C,1,0.7951361148294429,1,0.7651331719128329
+9ea124a13d071186,2024-10-05,Unânime,Kayla Harrison,Ketlen Vieira,Kayla Harrison,C,1,0.9780281999443448,1,0.7651331719128329
+e8aad69aace1d31f,2024-10-05,Dividida,Alexander Hernandez,Austin Hubbard,Alexander Hernandez,C,1,0.7401737574825202,1,0.7651331719128329
+eb73b63bbd7b88a7,2024-10-05,Dividida,Marina Rodriguez,Iasmin Lucindo,Iasmin Lucindo,D,0,0.33267868189237343,0,0.7651331719128329
+ed5b6681ab4e83e5,2024-10-05,Unânime,Cesar Almeida,Ihor Potieria,Cesar Almeida,C,1,0.5517028318820141,1,0.7651331719128329
+48dd2c9cb39bd2d4,2024-10-12,Dividida,Julia Polastri,Cory McKenna,Julia Polastri,C,1,0.9065025811139611,1,0.7651331719128329
+57415110bd494c79,2024-10-12,Unânime,Themba Gorimbo,Niko Price,Themba Gorimbo,C,1,0.9927285700390717,1,0.7651331719128329
+6fa2dae90bda4742,2024-10-12,Dividida,JunYong Park,Brad Tavares,JunYong Park,C,1,0.9400428132715755,1,0.7651331719128329
+b23554da35a84fbc,2024-10-12,Unânime,Cody Haddon,Dan Argueta,Cody Haddon,C,1,0.9164160950344177,1,0.7651331719128329
+ee5c0b8a757992af,2024-10-12,Unânime,Chidi Njokuani,Jared Gooden,Chidi Njokuani,C,1,0.9901052482606972,1,0.7651331719128329
+f690949d90ff1dee,2024-10-12,Dividida,Daniel Rodriguez,Alex Morono,Daniel Rodriguez,C,1,0.9068630194154863,1,0.7651331719128329
+0599f35e6679de02,2024-10-19,Unânime,Darren Elkins,Daniel Pineda,Darren Elkins,C,1,0.774869513498701,1,0.7651331719128329
+32b8c6c4b735d712,2024-10-19,Unânime,Robelis Despaigne,Austen Lane,Austen Lane,D,0,0.24072206304459412,0,0.7651331719128329
+4277b02a4dadac40,2024-10-19,Unânime,Alice Ardelean,Melissa Martinez,Melissa Martinez,D,0,0.6834714373916159,1,0.7651331719128329
+503d7342cc08109f,2024-10-19,Unânime,Sumudaerji,Charles Johnson,Charles Johnson,D,0,0.3483104844627945,0,0.7651331719128329
+53f7f1b4834387a8,2024-10-19,Unânime,Elise Reed,Jessica Penne,Elise Reed,C,1,0.8398707607612966,1,0.7651331719128329
+a2f46e94aa6b0c64,2024-10-19,Unânime,Cameron Smotherman,Jake Hadley,Cameron Smotherman,C,1,0.793106680928661,1,0.7651331719128329
+c61923255389e67c,2024-10-19,Unânime,Asu Almabayev,Matheus Nicolau,Asu Almabayev,C,1,0.9327164035972895,1,0.7651331719128329
+f01b97e864cb4b8b,2024-10-19,Unânime,Rob Font,Kyler Phillips,Rob Font,C,1,0.5645274135926949,1,0.7651331719128329
+5c783cd188425783,2024-10-26,Unânime,Farid Basharat,Victor Hugo,Farid Basharat,C,1,0.8967474783325892,1,0.7651331719128329
+6114076c689e8457,2024-10-26,Unânime,Rinat Fakhretdinov,Carlos Leal,Rinat Fakhretdinov,C,1,0.6732649388612921,1,0.7651331719128329
+919e3c5cc6999cb3,2024-10-26,Dividida,Mateusz Rebecki,Myktybek Orolbai,Mateusz Rebecki,C,1,0.8627665930431265,1,0.7651331719128329
+b09f54654b0f95f5,2024-10-26,Unânime,Magomed Ankalaev,Aleksandar Rakic,Magomed Ankalaev,C,1,0.6611996194858039,1,0.7651331719128329
+bde635a4f345bc3e,2024-10-26,Unânime,Ismail Naurdiev,Bruno Silva,Ismail Naurdiev,C,1,0.971604566567105,1,0.7651331719128329
+cc11a0762f246fa4,2024-10-26,Unânime,Lerone Murphy,Dan Ige,Lerone Murphy,C,1,0.40949944494570173,0,0.7651331719128329
+7edf2fe3a8776a44,2024-11-02,Dividida,Caio Machado,Brendson Ribeiro,Brendson Ribeiro,D,0,0.8457230835460204,1,0.7651331719128329
+b989d4d7e220b3c1,2024-11-02,Unânime,Aiemann Zahabi,Pedro Munhoz,Aiemann Zahabi,C,1,0.8052315044948872,1,0.7651331719128329
+c9cef59a5de32219,2024-11-02,Unânime,Cody Gibson,Chad Anheliger,Cody Gibson,C,1,0.9243160735162497,1,0.7651331719128329
+d29a82322bb083d9,2024-11-02,Unânime,Mike Malott,Trevin Giles,Mike Malott,C,1,0.832393422261159,1,0.7651331719128329
+de084f0d65421cfa,2024-11-02,Unânime,Alexandr Romanov,Rodrigo Nascimento,Alexandr Romanov,C,1,0.9758040825592346,1,0.7651331719128329
+f0723cda67db3954,2024-11-02,Dividida,Jamey-Lyn Horth,Ivana Petrovic,Jamey-Lyn Horth,C,1,0.5918348689501116,1,0.7651331719128329
+f93b074dfd47b4b4,2024-11-02,Dividida,Garrett Armfield,Serhiy Sidey,Serhiy Sidey,D,0,0.8527057201145611,1,0.7651331719128329
+c31d9cac7534d879,2024-11-09,Unânime,Gillian Robertson,Luana Pinheiro,Gillian Robertson,C,1,0.9444263032914667,1,0.7651331719128329
+e62033cb1e79aa81,2024-11-09,Unânime,Denise Gomes,Karolina Kowalkiewicz,Denise Gomes,C,1,0.9281500035808599,1,0.7651331719128329
+e6685759ed2af90d,2024-11-09,Unânime,Gaston Bolanos,Cortavious Romious,Gaston Bolanos,C,1,0.8870977772112784,1,0.7651331719128329
+2a930e2d7e1f87a9,2024-11-16,Unânime,Marcus McGhee,Jonathan Martinez,Marcus McGhee,C,1,0.8827932113756439,1,0.7651331719128329
+40e2a7b65794ac05,2024-11-16,Unânime,Veronica Hardy,Eduarda Moura,Eduarda Moura,D,0,0.6527891426688859,1,0.7651331719128329
+55eebc2ee92bf00a,2024-11-16,Unânime,James Llontop,Mauricio Ruffy,Mauricio Ruffy,D,0,0.4155799874595764,0,0.7651331719128329
+8545a2495db16538,2024-11-16,Unânime,Karine Silva,Viviane Araujo,Viviane Araujo,D,0,0.5848384002567684,1,0.7651331719128329
+c565e2baa27cc7e5,2024-11-16,Unânime,David Onama,Roberto Romero,David Onama,C,1,0.949607863632697,1,0.7651331719128329
+cfd3e62c638fbd1f,2024-11-16,Unânime,Bo Nickal,Paul Craig,Bo Nickal,C,1,0.8654145024227113,1,0.7651331719128329
+02ec66f311dce539,2024-11-23,Unânime,Carlos Ulberg,Volkan Oezdemir,Carlos Ulberg,C,1,0.5929385806081899,1,0.7651331719128329
+38f1c83c19e99fa2,2024-11-23,Unânime,Lone'er Kavanagh,Jose Ochoa,Lone'er Kavanagh,C,1,0.6464796682586764,1,0.7651331719128329
+5dab54e34c2cfe01,2024-11-23,Dividida,Carlos Hernandez,Nyamjargal Tumendemberel,Carlos Hernandez,C,1,0.8162004850287364,1,0.7651331719128329
+86a2f07e0bf20297,2024-11-23,Unânime,Nikolas Motta,Maheshate,Nikolas Motta,C,1,0.98164066460385,1,0.7651331719128329
+f0c4aff7dd1ec4e9,2024-11-23,Unânime,Yan Xiaonan,Tabatha Ricci,Yan Xiaonan,C,1,0.954322930066884,1,0.7651331719128329
+7c0d0a28a8fba102,2024-12-07,Dividida,Randy Brown,Bryan Battle,Bryan Battle,D,0,0.44130259040234854,0,0.7651331719128329
+d38029cf47e54cf7,2024-12-07,Unânime,Joshua Van,Cody Durden,Joshua Van,C,1,0.9468145156332239,1,0.7651331719128329
+df30514e0674d598,2024-12-07,Unânime,Aljamain Sterling,Movsar Evloev,Movsar Evloev,D,0,0.8064195704103189,1,0.7651331719128329
+f706508c52f337a6,2024-12-07,Dividida,Ciryl Gane,Alexander Volkov,Ciryl Gane,C,1,0.720298284439309,1,0.7651331719128329
+2b6a75175bbca4e9,2024-12-14,Unânime,Navajo Stirling,Tuco Tokkos,Navajo Stirling,C,1,0.8262277072854638,1,0.7651331719128329
+5238f6470d0557fb,2024-12-14,Dividida,Daniel Marcos,Adrian Yanez,Daniel Marcos,C,1,0.8316448721225144,1,0.7651331719128329
+b40e4deb48658851,2024-12-14,Unânime,Davey Grant,Ramon Taveras,Davey Grant,C,1,0.9445152720155987,1,0.7651331719128329
+cf258c17234d649e,2024-12-14,Unânime,Felipe Lima,Miles Johns,Felipe Lima,C,1,0.921361022784051,1,0.7651331719128329
+e5f9d59d00fe3c73,2024-12-14,Unânime,Miranda Maverick,Jamey-Lyn Horth,Miranda Maverick,C,1,0.8969736029492764,1,0.7651331719128329
+edf7ce89ad672e85,2024-12-14,Unânime,Piera Rodriguez,Josefine Knutsson,Piera Rodriguez,C,1,0.981276249502137,1,0.7651331719128329
