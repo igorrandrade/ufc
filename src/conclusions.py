@@ -22,7 +22,7 @@ def build():
         ('H1 recebe apoio descritivo',
          f'A concordância de {fmt(a["concordance"])}% superou em {fmt(k["H1_excess_pp"])} pontos percentuais '
          'a referência de 50% definida na Fase 1. Escolher o líder em golpes acertou mais resultados históricos que a referência '
-         'de escolher aleatoriamente um dos dois atletas. Não se trata de um teste de significância estatística.'),
+         'de escolher aleatoriamente um dos dois atletas. A inferência exploratória complementar é apresentada separadamente e não muda o critério descritivo planejado.'),
         ('H2 recebe apoio descritivo',
          f'Nas decisões unânimes, o líder venceu {u["C"]}/{u["C"] + u["D"]} lutas ({fmt(u["concordance"])}%); '
          f'nas divididas, {d["C"]}/{d["C"] + d["D"]} ({fmt(d["concordance"])}%). A diferença foi de '
@@ -56,6 +56,14 @@ def build():
          'Sua melhora agregada sobre a regra de escolher o líder não mede a contribuição isolada dos golpes significativos '
          'e não é a evidência usada para responder a H1 e H2. As hipóteses são respondidas pelas contagens e proporções acima.')
     ]
+    inference_path = ROOT / 'outputs/inference.json'
+    if inference_path.exists():
+        inf = json.loads(inference_path.read_text())
+        paragraphs.insert(4, ('Inferência complementar e seus limites',
+            f"Sob o modelo de independência, o IC de 95% de Wilson global é {fmt(inf['concordance_ci95'][0])}%–{fmt(inf['concordance_ci95'][1])}%. "
+            f"O teste binomial bilateral resulta em p={inf['H1_binomial_p_vs_50']:.3g}, e o teste exato de Fisher bilateral em p={inf['H2_fisher_p']:.3g}, "
+            f"com razão de chances {fmt(inf['H2_fisher_odds_ratio'])}. "
+            + inf['limitations']))
     md = '# Conclusão e respostas à Fase 1\n\n' + '\n\n'.join(f'## {title}\n\n{text}' for title, text in paragraphs)
     html = '<h2>Conclusão e respostas à Fase 1</h2><p class="caption">Recorte completo de 2022–2024; esta conclusão não muda com os filtros do Panorama.</p>' + ''.join(
         f'<h3>{escape(title)}</h3><p>{escape(text)}</p>' for title, text in paragraphs)

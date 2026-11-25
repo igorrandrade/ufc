@@ -2,6 +2,8 @@
 
 Projeto de Igor de Andrade Albuquerque para a Fase 2 de Business Intelligence e Analytics.
 
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/igorrandrade/ufc/blob/main/notebooks/UFC_BI_Analytics.ipynb)
+
 ## Resposta à pesquisa da Fase 1
 
 **Sim, liderar em golpes significativos esteve associado à vitória nas decisões deste recorte:** 514/660 = **77,88%**. A liderança não garantiu a vitória: houve 146 divergências (22,12%).
@@ -24,23 +26,24 @@ Um analista de cobertura esportiva precisa verificar quando o líder em golpes s
 - Modelo no teste de 2024: 211/247 acertos = 85,43%, versus 198/247 = 80,16% da baseline.
 - O modelo identificou 25 das 49 divergências. Nas decisões divididas não superou a baseline em acurácia.
 
+## Guia rápido
+
+No Colab, abra apenas `notebooks/UFC_BI_Analytics.ipynb` e execute tudo. No GitHub, publique o conteúdo desta pasta na raiz, mantendo `src/`, `notebooks/`, `data/`, `outputs/`, `docs/` e `tests/`. Não envie a pasta externa `repositorio/` como um nível adicional. Consulte [o guia completo](docs/GUIA_DE_USO.md).
+
 ## Executar
 
 Python 3.12 é o ambiente de referência. Na raiz do repositório:
 
 ```bash
 python -m pip install -r requirements.txt
-python -m src.pipeline
-python -m src.analytics
-python -m src.visuals
-python -m unittest discover -s tests -v
+python -m src.run_all
 ```
 
 Abra `docs/index.html` no navegador. Os dados estão incorporados ao HTML e os filtros funcionam sem servidor ou conexão externa. As fichas oficiais exigem conexão.
 
 ### Google Colab
 
-O notebook `notebooks/UFC_BI_Analytics.ipynb` é autocontido: use Arquivo → Fazer upload do notebook e Ambiente de execução → Executar tudo. A primeira célula reconstitui os módulos; os CSVs ausentes são baixados do commit fixado. O notebook apresenta gráficos, painéis interativos, métricas e testes. Não exige GPU, chave de API ou serviço pago. Foi executado localmente em IPython (sete células de código, zero erro); a execução hospedada no Colab ainda requer conferência na conta do autor.
+O notebook `notebooks/UFC_BI_Analytics.ipynb` é autocontido: use Arquivo → Fazer upload do notebook e Ambiente de execução → Executar tudo. A primeira célula reconstitui os módulos; os CSVs ausentes são baixados do commit fixado. O notebook apresenta gráficos, painéis interativos, métricas e testes. Não exige GPU, chave de API ou serviço pago. Foi executado localmente em IPython (oito células de código, zero erro); a execução hospedada no Colab ainda requer conferência na conta do autor.
 
 O Colab também permite abrir o notebook pela aba GitHub ou pelo link abaixo. O GitHub exibe resultados estáticos, mas a interação deve ocorrer no Colab ou no HTML. O diretório `docs/` pode ser publicado pelo GitHub Pages como alternativa de acesso ao painel, sem substituir o notebook da plataforma escolhida.
 
@@ -54,7 +57,7 @@ O Colab também permite abrir o notebook pela aba GitHub ou pelo link abaixo. O 
 - `data/processed/`: lutas, rounds, exclusões, datas não resolvidas e amostra. O SQLite é gerado pelo pipeline e também acompanha o ZIP da entrega.
 - `outputs/`: KPIs, métricas, previsões, parâmetros do modelo, manifesto e registros de validação.
 - `docs/`: painel e documentação metodológica.
-- `tests/`: 17 testes de casos limites e reconciliação.
+- `tests/`: 20 testes de casos limites e reconciliação.
 
 ## Fonte e período
 
@@ -81,3 +84,7 @@ Repositório: https://github.com/igorrandrade/ufc
 Notebook no Colab: https://colab.research.google.com/github/igorrandrade/ufc/blob/main/notebooks/UFC_BI_Analytics.ipynb
 
 O notebook foi executado localmente; a execução hospedada no Colab ainda precisa de conferência. A amostra externa de 12 fichas segue pendente.
+
+## Etapas individuais e inferência complementar
+
+Ordem: `python -m src.pipeline`, `python -m src.analytics`, `python -m src.inference`, `python -m src.visuals`, `python -m unittest discover -s tests -v`. O comando `src.run_all` já executa todas. A inferência de Wilson/binomial/Fisher é exploratória: há atletas repetidos e o recorte não é uma amostra aleatória; os p-valores não comprovam causalidade.

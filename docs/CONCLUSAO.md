@@ -6,7 +6,7 @@ Sim, liderar em golpes significativos conectados foi um indicador associado à v
 
 ## H1 recebe apoio descritivo
 
-A concordância de 77,88% superou em 27,88 pontos percentuais a referência de 50% definida na Fase 1. Escolher o líder em golpes acertou mais resultados históricos que a referência de escolher aleatoriamente um dos dois atletas. Não se trata de um teste de significância estatística.
+A concordância de 77,88% superou em 27,88 pontos percentuais a referência de 50% definida na Fase 1. Escolher o líder em golpes acertou mais resultados históricos que a referência de escolher aleatoriamente um dos dois atletas. A inferência exploratória complementar é apresentada separadamente e não muda o critério descritivo planejado.
 
 ## H2 recebe apoio descritivo
 
@@ -15,6 +15,10 @@ Nas decisões unânimes, o líder venceu 424/518 lutas (81,85%); nas divididas, 
 ## Empates e robustez
 
 As 665 lutas válidas incluem 5 empates em golpes, mantidos no painel e retirados apenas do denominador da concordância. A cobertura classificável foi 99,25%. Atribuir todos os empates aos extremos produz 77,29% a 78,05% de concordância no total válido, ainda acima de 50%. A direção de H2 também permanece nas atribuições extremas. Esses limites são uma análise de sensibilidade, não intervalos de confiança.
+
+## Inferência complementar e seus limites
+
+Sob o modelo de independência, o IC de 95% de Wilson global é 74,56%–80,88%. O teste binomial bilateral resulta em p=6.41e-49, e o teste exato de Fisher bilateral em p=6.87e-06, com razão de chances 2,61. O recorte reúne todos os confrontos elegíveis do snapshot, não uma amostra aleatória. Há atletas repetidos entre lutas; os testes não ajustam essa dependência nem fatores de confusão. ICs e p-valores são condicionais ao modelo de independência, não validação causal ou garantia de generalização.
 
 ## O que significa fazer diferença
 

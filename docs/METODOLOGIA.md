@@ -6,7 +6,7 @@
 2. Compreensão: eventos, resultados e estatísticas por atleta/round no espelho público.
 3. Preparação: verificar hashes, conciliar aliases por URL, padronizar textos e tipos, aplicar filtros e validar a grade completa de rounds.
 4. Modelagem: KPIs em SQLite/Python e regressão logística com sete diferenças entre líder e adversário.
-5. Avaliação: reconciliação SQL/Python, 17 testes, comparação temporal contra baseline e interpretação por tipo de decisão.
+5. Avaliação: reconciliação SQL/Python, 20 testes, comparação temporal contra baseline e interpretação por tipo de decisão.
 6. Implantação: notebook Colab e painel exportado. Código, notebook e painel disponíveis em https://github.com/igorrandrade/ufc. A execução hospedada no Colab permanece pendente de conferência.
 
 ## KPIs de negócio
@@ -23,7 +23,7 @@ A unidade de análise é a luta. C = líder venceu; D = líder perdeu; E = empat
 
 Denominador zero é não calculável, nunca 0%. Os filtros recalculam numerador e denominador. A frequência dos empates é 100E/N. As taxas descrevem o período; não se define meta de aumentar concordância, pois o projeto não controla o resultado esportivo.
 
-H1: concordância global acima de 50%, usada como referência aleatória. H2: taxa nas unânimes maior que nas divididas, contraste principal. São hipóteses descritivas; não foram apresentados p-valores. Os limites 100C/N e 100(C+E)/N mostram sensibilidade às duas atribuições extremas dos empates, não incerteza amostral.
+H1: concordância global acima de 50%, usada como referência aleatória. H2: taxa nas unânimes maior que nas divididas, contraste principal. São hipóteses descritivas; a inferência adicional é exploratória e não substitui esse critério. Os limites 100C/N e 100(C+E)/N mostram sensibilidade às duas atribuições extremas dos empates, não incerteza amostral.
 
 ## Predição
 
@@ -48,3 +48,7 @@ Referências técnicas: Aulas 6 a 10 fornecidas pela disciplina; Google Colab FA
 ## Respostas à Fase 1
 
 A conclusão em [CONCLUSAO.md](CONCLUSAO.md) responde à pergunta central, H1, H2, robustez e objetivos. Ela é gerada por `src/conclusions.py` a partir dos KPIs efetivamente calculados. O projeto mantém o recorte e o delineamento observacional da Fase 1. A substituição do Streamlit pelo Colab atende às plataformas permitidas na Fase 2; o modelo preditivo é uma extensão exigida nesta fase e não altera as hipóteses originais.
+
+## Inferência exploratória complementar
+
+`src/inference.py` calcula Wilson a 95%, teste binomial bilateral contra 50% e Fisher bilateral para a tabela [[424,94],[90,52]]. O notebook executa esta etapa antes das visualizações. Os testes assumem independência, não ajustam atletas repetidos e não transformam o censo do recorte em amostra aleatória. Os valores e pressupostos ficam em `outputs/inference.json`. Fontes: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binomtest.html e https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.fisher_exact.html.

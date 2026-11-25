@@ -60,4 +60,23 @@ class Integration(unittest.TestCase):
         p=pd.read_csv(ROOT/'outputs/predictions_2024.csv');m=json.loads((ROOT/'outputs/model_metrics.json').read_text())
         self.assertEqual(int((p.predicted==p.target).sum()),sum(m['test_model']['confusion_matrix'][i][i] for i in [0,1]))
 
+class InferenceChecks(unittest.TestCase):
+    def test_wilson_matches_scipy(self):
+        from scipy.stats import binomtest
+        from src.inference import wilson
+        for successes, total in [(0,10),(10,10),(514,660)]:
+            reference=binomtest(successes,total).proportion_ci(method='wilson')
+            low,high=wilson(successes,total)
+            self.assertAlmostEqual(low/100,reference.low,places=5)
+            self.assertAlmostEqual(high/100,reference.high,places=5)
+    def test_wilson_rejects_empty_denominator(self):
+        from src.inference import wilson
+        with self.assertRaises(ValueError):wilson(0,0)
+    def test_round_foreign_keys(self):
+        b=pd.read_csv(ROOT/'data/processed/bouts.csv')
+        r=pd.read_csv(ROOT/'data/processed/rounds.csv')
+        self.assertFalse(set(r.bout_id)-set(b.bout_id))
+        for bout in b.itertuples():
+            self.assertEqual(set(r[r.bout_id==bout.bout_id].fighter),{bout.fighter_a,bout.fighter_b})
+
 if __name__=='__main__':unittest.main()

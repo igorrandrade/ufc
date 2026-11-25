@@ -1,0 +1,16 @@
+{
+  "executed_at": "2026-11-25T19:49:20.618938+00:00",
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "ipython": "9.18.1"
+  },
+  "tests": 20,
+  "failures": 0,
+  "errors": 0,
+  "scope": "Execução local. Não comprova execução no Colab hospedado nem conferência dos campos no UFCStats."
+}

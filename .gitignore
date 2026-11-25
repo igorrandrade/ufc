@@ -1,5 +1,5 @@
 __pycache__/
-*.pyc
+*.py[cod]
+.ipynb_checkpoints/
 .venv/
 outputs/source_pages/
-.ipynb_checkpoints/
