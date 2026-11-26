@@ -14,13 +14,14 @@ from importlib.metadata import version
 
 from .analytics import run as analytics
 from .inference import run as inference
+from .forecast import run as forecast
 from .pipeline import ROOT, build
 from .visuals import build as visuals
 
 
 def main():
     stages = [('coleta e KPIs', build), ('modelo', analytics),
-              ('inferência complementar', inference), ('visualizações e conclusão', visuals)]
+              ('inferência complementar', inference), ('previsão mensal', forecast), ('visualizações e conclusão', visuals)]
     for label, action in stages:
         with contextlib.redirect_stdout(io.StringIO()):  # silencia a saída detalhada de cada etapa
             action()

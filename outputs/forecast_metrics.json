@@ -1,0 +1,55 @@
+{
+  "task": "Prever C/(C+D) do mês seguinte antes de observar suas lutas.",
+  "cohort": "Mesmo recorte descritivo: decisões unânimes/divididas de três rounds completos, UFC 2022–2024.",
+  "features": [
+    "lag_1",
+    "lag_2",
+    "lag_3"
+  ],
+  "selected_alpha": 10.0,
+  "validation_trials": [
+    {
+      "alpha": 0.1,
+      "mae_pp": 22.76885877328022,
+      "rmse_pp": 24.985378060842955
+    },
+    {
+      "alpha": 1.0,
+      "mae_pp": 18.33902353404747,
+      "rmse_pp": 20.36297696472737
+    },
+    {
+      "alpha": 10.0,
+      "mae_pp": 11.140908754422107,
+      "rmse_pp": 13.734663788140129
+    }
+  ],
+  "split": {
+    "train_months": 9,
+    "validation_months": 12,
+    "final_train_months": 21,
+    "test_months": 12
+  },
+  "model": {
+    "mae_pp": 7.958914225285025,
+    "rmse_pp": 10.53155111496338
+  },
+  "baseline": {
+    "mae_pp": 6.764342755493523,
+    "rmse_pp": 8.409866119891802
+  },
+  "validation_baseline": {
+    "mae_pp": 9.516397728252002,
+    "rmse_pp": 12.377163122249742
+  },
+  "baseline_definition": "Concordância acumulada ponderada pelo número de lutas, apenas até o mês anterior.",
+  "protocol": "Previsões de um mês à frente; coeficientes congelados até dezembro/2023 no teste de 2024. Meses anteriores de 2024 alimentam somente as defasagens e a baseline.",
+  "next_period": {
+    "origin": "2024-12",
+    "month": "2025-01",
+    "predicted_rate": 0.7732260099900738,
+    "baseline_rate": 0.7787878787878788,
+    "status": "Projeção na origem histórica do estudo, sem avaliação contra janeiro/2025 e sem uso de dados após 2024."
+  },
+  "limitations": "Apenas 36 meses, 12 no teste; denominadores variáveis e atletas repetidos. Sem intervalo de previsão calibrado. Não prevê vencedor individual nem demonstra causalidade. Uso exploratório para planejamento editorial."
+}

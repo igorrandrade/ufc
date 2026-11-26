@@ -35,3 +35,7 @@ A base relacional foi integrada; concordâncias, divergências, empates e denomi
 ## Papel complementar do Analytics
 
 O modelo com sete variáveis acrescenta uma análise preditiva retrospectiva exigida na Fase 2. Sua melhora agregada sobre a regra de escolher o líder não mede a contribuição isolada dos golpes significativos e não é a evidência usada para responder a H1 e H2. As hipóteses são respondidas pelas contagens e proporções acima.
+
+## Previsão do mês seguinte
+
+A extensão temporal prevê a taxa de concordância mensal antes de observar o mês-alvo. No teste de 2024, o erro absoluto médio foi 7,96 pontos percentuais no Ridge e 6,76 na referência histórica. A referência simples foi melhor, inclusive na validação de 2023. Não se recomenda substituir essa referência pelo Ridge com a evidência disponível. Esta previsão serve ao planejamento editorial e não identifica o vencedor individual de uma luta.

@@ -72,6 +72,12 @@ def build():
             f"O teste binomial bilateral resulta em p={inf['H1_binomial_p_vs_50']:.3g}, e o teste exato de Fisher bilateral em p={inf['H2_fisher_p']:.3g}, "
             f"com razão de chances {fmt(inf['H2_fisher_odds_ratio'])}. "
             + inf['limitations']))
+    forecast_path = ROOT / 'outputs/forecast_metrics.json'
+    if forecast_path.exists():
+        forecast = json.loads(forecast_path.read_text())
+        paragraphs.append(('Previsão do mês seguinte',
+            f"A extensão temporal prevê a taxa de concordância mensal antes de observar o mês-alvo. No teste de 2024, o erro absoluto médio foi {fmt(forecast['model']['mae_pp'])} pontos percentuais no Ridge e {fmt(forecast['baseline']['mae_pp'])} na referência histórica. "
+            'A referência simples foi melhor, inclusive na validação de 2023. Não se recomenda substituir essa referência pelo Ridge com a evidência disponível. Esta previsão serve ao planejamento editorial e não identifica o vencedor individual de uma luta.'))
     md = '# Conclusão e respostas à Fase 1\n\n' + '\n\n'.join(f'## {title}\n\n{text}' for title, text in paragraphs)
     html = '<h2>Conclusão e respostas à Fase 1</h2><p class="caption">Recorte completo de 2022–2024; esta conclusão não muda com os filtros do Panorama.</p>' + ''.join(
         f'<h3>{escape(title)}</h3><p>{escape(text)}</p>' for title, text in paragraphs)

@@ -1,8 +1,8 @@
 {
-  "executed_code_cells": 8,
+  "executed_code_cells": 9,
   "errors": 0,
-  "tests": 27,
-  "executed_at": "2026-11-26T01:10:27.254850+00:00",
+  "tests": 34,
+  "executed_at": "2026-11-26T14:22:31.593786+00:00",
   "python": "3.12.14",
   "engine": "IPython local",
   "platform_validation": "Executado localmente; Colab hospedado não conferido"

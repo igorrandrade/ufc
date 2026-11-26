@@ -1,5 +1,5 @@
 {
-  "checks": 21,
+  "checks": 24,
   "errors": 0,
   "engine": "jsdom 28, DOM e JavaScript",
   "limitation": "Renderização em navegador Chromium bloqueada pelo ambiente; esta verificação não é uma inspeção visual em navegador."

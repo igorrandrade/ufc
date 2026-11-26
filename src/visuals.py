@@ -5,6 +5,7 @@ O painel é um único HTML autossuficiente: os dados são incorporados ao arquiv
 O mesmo HTML é exibido dentro do notebook (Colab) e salvo em docs/index.html.
 """
 import json
+import base64
 
 import matplotlib
 matplotlib.use('Agg')  # backend sem interface gráfica (funciona em servidor e Colab)
@@ -27,16 +28,42 @@ def _style():
                          'axes.labelcolor': INK, 'text.color': INK})
 
 
+def _forecast_html(out):
+    """Apresenta o teste temporal mensal, sem confundir previsão com classificação."""
+    f=pd.read_csv(out/'forecast_2024.csv')
+    m=json.loads((out/'forecast_metrics.json').read_text())
+    fig,ax=plt.subplots(figsize=(10,4.4))
+    for column,label,color in [('rate','Observado',INK),('prediction','Ridge',BLUE),('baseline','Referência histórica','#137f76')]:
+        ax.plot(range(12),100*f[column],marker='o',label=label,color=color)
+    ax.set_xticks(range(12),[x[5:] for x in f.month]);ax.set_ylim(0,100)
+    ax.set_xlabel('Mês de 2024');ax.set_ylabel('Concordância (%)')
+    ax.set_title('Previsões feitas antes de observar cada mês',loc='left')
+    ax.legend(loc='lower left');ax.grid(axis='y',alpha=.15);fig.tight_layout()
+    fig.savefig(out/'forecast.png',dpi=160);plt.close(fig)
+    image=base64.b64encode((out/'forecast.png').read_bytes()).decode()
+    number=lambda x: f'{x:.2f}'.replace('.',',')
+    rows=''.join(f'<tr><td>{x.month}</td><td>{int(x.n)}</td><td>{number(100*x.rate)}%</td><td>{number(100*x.prediction)}%</td><td>{number(100*x.baseline)}%</td><td>{x.feature_cutoff}</td></tr>' for x in f.itertuples())
+    return f"""<h2>Concordância prevista para o mês seguinte</h2>
+    <p>Alvo: proporção de vitórias do líder entre as decisões elegíveis do próximo mês. Cada previsão usa apenas os três meses anteriores, com coeficientes ajustados até 2023. Não prevê vencedores individuais.</p>
+    <div class="cards"><article class="card"><small>Teste temporal</small><div class="value">12 meses</div><div class="caption">Janeiro a dezembro de 2024</div></article><article class="card"><small>Erro absoluto médio: Ridge</small><div class="value">{number(m['model']['mae_pp'])} p.p.</div></article><article class="card"><small>Erro da referência histórica</small><div class="value">{number(m['baseline']['mae_pp'])} p.p.</div><div class="caption">Menor erro é melhor</div></article></div>
+    <p class="notice">A referência histórica teve menor erro que a regressão Ridge neste teste. Não há evidência de ganho do modelo mais complexo. A série tem apenas 36 meses e a avaliação é exploratória.</p>
+    <article class="panel"><img alt="Concordância observada e prevista por mês em 2024" style="width:100%;max-width:1000px" src="data:image/png;base64,{image}"></article>
+    <div class="panel tablewrap"><table><thead><tr><th>Mês</th><th>Lutas</th><th>Observado</th><th>Ridge</th><th>Referência</th><th>Dados até</th></tr></thead><tbody>{rows}</tbody></table><button id="exportforecast">Baixar 12 previsões mensais em CSV</button></div>
+    <p>Projeção a partir de dezembro/2024 para janeiro/2025: {number(100*m['next_period']['predicted_rate'])}% pelo Ridge e {number(100*m['next_period']['baseline_rate'])}% pela referência. É uma projeção na origem histórica do estudo, sem verificação contra janeiro/2025, e não uma previsão atual.</p>
+    <p class="caption">Treino: nove meses de 2022 após três meses de aquecimento. Seleção de alpha em 2023; reajuste em 21 meses de 2022–2023. Coeficientes congelados no teste de 2024. Alphas comparados: 0,1; 1; 10. Não foi calculado intervalo de previsão calibrado.</p>"""
+
+
 def _dashboard(out, b, r, p, k, m, q):
     """Injeta os dados no modelo HTML e grava docs/index.html. Retorna o HTML."""
     checks = json.loads((out / 'source_checks.json').read_text()) if (out / 'source_checks.json').exists() else []
-    mapping = {'__DATA__': b.to_json(orient='records', force_ascii=False),
+    mapping = {'__FC__': pd.read_csv(out/'forecast_2024.csv').to_json(orient='records'), '__DATA__': b.to_json(orient='records', force_ascii=False),
                '__ROUNDS__': r.to_json(orient='records', force_ascii=False),
                '__PRED__': p.to_json(orient='records', force_ascii=False),
                '__METRICS__': json.dumps(m, ensure_ascii=False),
                '__QUALITY__': json.dumps(q, ensure_ascii=False),
                '__CHECKS__': json.dumps(checks, ensure_ascii=False)}
     page = (ROOT / 'src/dashboard_template.html').read_text(encoding='utf-8')
+    page = page.replace('__FORECAST_HTML__', _forecast_html(out))
     page = page.replace('__CONCLUSION__', build_conclusions()[1])
     for key, value in mapping.items():
         page = page.replace(key, value.replace('</', '<\\/'))  # evita fechar <script> por acidente
