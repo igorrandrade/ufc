@@ -26,9 +26,15 @@ Um analista de cobertura esportiva precisa verificar quando o líder em golpes s
 - Modelo no teste de 2024: 211/247 acertos = 85,43%, versus 198/247 = 80,16% da baseline.
 - O modelo identificou 25 das 49 divergências. Nas decisões divididas não superou a baseline em acurácia.
 
+## Pacote completo
+
+[Baixar todos os arquivos da entrega](https://github.com/igorrandrade/ufc/raw/refs/heads/main/entrega/Fase2_UFC_Final.zip): relatório PDF/Word, apresentação PPTX/PDF, painel, dados e projeto técnico.
+
+[Mapa de arquivos e explicação do ETL](docs/GUIA_ARQUIVOS_ETL.md).
+
 ## Guia rápido
 
-No Colab, abra apenas `notebooks/UFC_BI_Analytics.ipynb` e execute tudo. No GitHub, publique o conteúdo desta pasta na raiz, mantendo `src/`, `notebooks/`, `data/`, `outputs/`, `docs/` e `tests/`. Não envie a pasta externa `repositorio/` como um nível adicional. Consulte [o guia completo](docs/GUIA_DE_USO.md).
+No Colab, abra apenas `notebooks/UFC_BI_Analytics.ipynb` e execute tudo. No GitHub, publique o conteúdo desta pasta na raiz, mantendo `src/`, `notebooks/`, `data/`, `outputs/`, `docs/`, `sql/` e `tests/`. Não envie a pasta externa `repositorio/` como um nível adicional. Consulte [o guia completo](docs/GUIA_DE_USO.md).
 
 ## Executar
 
@@ -50,6 +56,9 @@ O Colab também permite abrir o notebook pela aba GitHub ou pelo link abaixo. O 
 ## Organização
 
 - `src/pipeline.py`: coleta, hashes, limpeza, integração, SQLite e indicadores.
+- `sql/schema.sql` e `sql/consultas.sql`: esquema relacional (PK/FK/CHECK, índices, visões) e consultas analíticas. Ver [modelo de dados](docs/MODELO_DADOS.md).
+- `src/inference.py`: IC de Wilson, teste binomial (H1) e teste de Fisher (H2), de caráter exploratório.
+- `src/run_all.py`: executa todo o fluxo e os testes com um comando.
 - `src/analytics.py`: treinamento, seleção, teste e exportação de probabilidades.
 - `src/visuals.py`: gráficos e painel HTML incorporável ao notebook.
 - `src/source_check.py`: acessibilidade das fichas da amostra; acesso não equivale a validação dos campos.
@@ -57,7 +66,7 @@ O Colab também permite abrir o notebook pela aba GitHub ou pelo link abaixo. O 
 - `data/processed/`: lutas, rounds, exclusões, datas não resolvidas e amostra. O SQLite é gerado pelo pipeline e também acompanha o ZIP da entrega.
 - `outputs/`: KPIs, métricas, previsões, parâmetros do modelo, manifesto e registros de validação.
 - `docs/`: painel e documentação metodológica.
-- `tests/`: 20 testes de casos limites e reconciliação.
+- `tests/`: 27 testes (casos limites, reconciliação, restrições do banco e consultas SQL).
 
 ## Fonte e período
 

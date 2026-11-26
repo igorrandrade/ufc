@@ -1,7 +1,9 @@
 {
   "executed_code_cells": 8,
   "errors": 0,
-  "engine": "IPython InteractiveShell local, Python 3.12.14",
-  "executed_at": "2026-11-25",
-  "platform_validation": "Colab não acessado nesta execução; notebook compatível e executado localmente."
+  "tests": 27,
+  "executed_at": "2026-11-26T01:10:27.254850+00:00",
+  "python": "3.12.14",
+  "engine": "IPython local",
+  "platform_validation": "Executado localmente; Colab hospedado não conferido"
 }

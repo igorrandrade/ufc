@@ -6,7 +6,7 @@
 2. Compreensão: eventos, resultados e estatísticas por atleta/round no espelho público.
 3. Preparação: verificar hashes, conciliar aliases por URL, padronizar textos e tipos, aplicar filtros e validar a grade completa de rounds.
 4. Modelagem: KPIs em SQLite/Python e regressão logística com sete diferenças entre líder e adversário.
-5. Avaliação: reconciliação SQL/Python, 20 testes, comparação temporal contra baseline e interpretação por tipo de decisão.
+5. Avaliação: reconciliação SQL/Python, 27 testes, comparação temporal contra baseline e interpretação por tipo de decisão.
 6. Implantação: notebook Colab e painel exportado. Código, notebook e painel disponíveis em https://github.com/igorrandrade/ufc. A execução hospedada no Colab permanece pendente de conferência.
 
 ## KPIs de negócio

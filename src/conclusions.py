@@ -1,18 +1,26 @@
-"""Responde à pergunta e às hipóteses da Fase 1 usando os KPIs calculados."""
+"""Gera a conclusão da Fase 1 (Markdown e HTML) diretamente dos KPIs calculados.
+
+Os números do texto nunca são digitados à mão: vêm de outputs/kpis.json, o que
+impede divergência entre relatório, painel e dados. Se os dados deixarem de
+sustentar H1/H2, a geração é interrompida em vez de produzir texto enganoso.
+"""
 import json
 from html import escape
 from .pipeline import ROOT
 
 
 def build():
+    """Monta os parágrafos a partir dos KPIs; grava docs/CONCLUSAO.md e devolve (markdown, html)."""
     k = json.loads((ROOT / 'outputs/kpis.json').read_text())
     a, u, d = k['all'], k['by_method']['Unânime'], k['by_method']['Dividida']
     fmt = lambda x: f'{x:.2f}'.replace('.', ',')
     annual = [k['by_year_method'][f'{y} Unânime']['concordance'] -
               k['by_year_method'][f'{y} Dividida']['concordance'] for y in (2022, 2023, 2024)]
+    # Trava de coerência: a redação assume H1 e H2 apoiadas descritivamente.
     supported = a['concordance'] > 50 and u['concordance'] > d['concordance']
     if not supported:
         raise ValueError('Os dados não sustentam a conclusão desta versão; revisar o texto.')
+    # Cada item é (título, texto); os percentuais usam vírgula decimal (pt-BR) via fmt().
     paragraphs = [
         ('Resposta à pergunta central',
          f'Sim, liderar em golpes significativos conectados foi um indicador associado à vitória nas decisões analisadas. '

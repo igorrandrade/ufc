@@ -1,0 +1,32 @@
+erDiagram
+    direction LR
+    dim_fighter ||--o{ fact_round : "participa de"
+    fact_bout   ||--|{ fact_round : "contém 6 linhas"
+    dim_fighter {
+        INTEGER fighter_id PK
+        TEXT fighter UK
+    }
+    fact_bout {
+        TEXT bout_id PK
+        TEXT date
+        INTEGER year
+        TEXT event
+        TEXT method "Unânime | Dividida"
+        TEXT fighter_a
+        TEXT fighter_b
+        TEXT winner
+        TEXT status "C | D | E"
+        INTEGER sig_a
+        INTEGER sig_b
+        REAL sig_margin "líder - adversário"
+    }
+    fact_round {
+        TEXT bout_id PK,FK
+        INTEGER fighter_id PK,FK
+        INTEGER round PK "1 a 3"
+        INTEGER sig_landed
+        INTEGER sig_attempted
+        REAL td_landed
+        REAL kd
+        REAL control_seconds
+    }
