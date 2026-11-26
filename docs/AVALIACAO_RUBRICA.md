@@ -1,6 +1,6 @@
 # Conferência pelos critérios de avaliação
 
-Revisão final da versão 3, em 25/11/2026. A nota é atribuída pelo professor.
+Revisão final da versão 3, concluída em 26/11/2026. A nota é atribuída pelo professor.
 
 | Critério | Máximo | Evidência |
 |---|---:|---|
@@ -21,4 +21,4 @@ Revisão final da versão 3, em 25/11/2026. A nota é atribuída pelo professor.
 
 ## Limites registrados
 
-A execução local não comprova execução no Colab hospedado. A conferência externa das 12 fichas do UFCStats permanece pendente por bloqueio de acesso. Os testes estatísticos são exploratórios, sem ajuste de dependência por atletas repetidos ou confundidores. O modelo faz classificação retrospectiva após os três rounds, não previsão pré-luta. Não foram medidos ganhos financeiros ou de produtividade de um cliente real. Não se garante nota máxima.
+A execução hospedada no Colab foi confirmada separadamente da execução local: oito células sem erro e 27 testes aprovados. O painel exibiu os KPIs e respondeu à navegação para a aba do modelo. A conferência em navegador não abrangeu todos os filtros e downloads. A conferência externa das 12 fichas do UFCStats permanece pendente por bloqueio de acesso. Os testes estatísticos são exploratórios, sem ajuste de dependência por atletas repetidos ou confundidores. O modelo faz classificação retrospectiva após os três rounds, não previsão pré-luta. Não foram medidos ganhos financeiros ou de produtividade de um cliente real. Não se garante nota máxima.

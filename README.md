@@ -49,7 +49,7 @@ Abra `docs/index.html` no navegador. Os dados estão incorporados ao HTML e os f
 
 ### Google Colab
 
-O notebook `notebooks/UFC_BI_Analytics.ipynb` é autocontido: use Arquivo → Fazer upload do notebook e Ambiente de execução → Executar tudo. A primeira célula reconstitui os módulos; os CSVs ausentes são baixados do commit fixado. O notebook apresenta gráficos, painéis interativos, métricas e testes. Não exige GPU, chave de API ou serviço pago. Foi executado localmente em IPython (oito células de código, zero erro); a execução hospedada no Colab ainda requer conferência na conta do autor.
+O notebook `notebooks/UFC_BI_Analytics.ipynb` é autocontido: use Arquivo → Fazer upload do notebook e Ambiente de execução → Executar tudo. A primeira célula reconstitui os módulos; os CSVs ausentes são baixados do commit fixado. O notebook apresenta gráficos, painéis interativos, métricas e testes. Não exige GPU, chave de API ou serviço pago. Foi executado localmente em IPython e no Google Colab em 25/11/2026: oito células de código, zero erro e 27 testes aprovados. O registro da execução hospedada está em `outputs/colab_validation.json`.
 
 O Colab também permite abrir o notebook pela aba GitHub ou pelo link abaixo. O GitHub exibe resultados estáticos, mas a interação deve ocorrer no Colab ou no HTML. O diretório `docs/` pode ser publicado pelo GitHub Pages como alternativa de acesso ao painel, sem substituir o notebook da plataforma escolhida.
 
@@ -92,7 +92,7 @@ Repositório: https://github.com/igorrandrade/ufc
 
 Notebook no Colab: https://colab.research.google.com/github/igorrandrade/ufc/blob/main/notebooks/UFC_BI_Analytics.ipynb
 
-O notebook foi executado localmente; a execução hospedada no Colab ainda precisa de conferência. A amostra externa de 12 fichas segue pendente.
+O notebook foi executado localmente e no Colab hospedado, com oito células sem erro e 27 testes aprovados. A amostra externa de 12 fichas segue pendente.
 
 ## Etapas individuais e inferência complementar
 

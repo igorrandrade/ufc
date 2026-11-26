@@ -74,6 +74,7 @@ Caminhos abaixo são relativos à pasta Fase2_UFC do ZIP. No GitHub, o prefixo r
 | `repositorio/outputs/source_checks.json` | Registro das tentativas de acesso às fichas oficiais; validação dos campos pendente. |
 | `repositorio/outputs/execution_validation.json` | Ambiente e resultado dos 27 testes do comando run_all. |
 | `repositorio/outputs/notebook_execution.json` | Evidência da execução das oito células e dos testes no notebook. |
+| `repositorio/outputs/colab_validation.json` | Registro separado da execução observada no Google Colab: oito células, 27 testes e resultados conferidos na interface. |
 | `repositorio/outputs/dashboard_tests.json` | Verificações da lógica do painel com DOM/JavaScript; não equivale a uma inspeção visual em navegador. |
 
 ## Como foi feita a extração

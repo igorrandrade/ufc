@@ -7,7 +7,7 @@
 3. Preparação: verificar hashes, conciliar aliases por URL, padronizar textos e tipos, aplicar filtros e validar a grade completa de rounds.
 4. Modelagem: KPIs em SQLite/Python e regressão logística com sete diferenças entre líder e adversário.
 5. Avaliação: reconciliação SQL/Python, 27 testes, comparação temporal contra baseline e interpretação por tipo de decisão.
-6. Implantação: notebook Colab e painel exportado. Código, notebook e painel disponíveis em https://github.com/igorrandrade/ufc. A execução hospedada no Colab permanece pendente de conferência.
+6. Implantação: notebook Colab e painel exportado. Código, notebook e painel disponíveis em https://github.com/igorrandrade/ufc. A execução hospedada no Colab foi concluída em 25/11/2026, com oito células sem erro e 27 testes aprovados (`outputs/colab_validation.json`).
 
 ## KPIs de negócio
 

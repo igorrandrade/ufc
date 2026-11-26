@@ -68,7 +68,7 @@ python -m src.run_all
 Esse comando refaz o pipeline, os modelos, os testes estatísticos, o painel e os 27 testes. Depois, abra docs/index.html. Não execute os .py dando dois cliques: eles usam importações de pacote. Para rodar apenas uma etapa, a ordem está no README.
 
 CONFERÊNCIAS QUE AINDA EXIGEM ATENÇÃO
-A revisão foi executada localmente. Ainda é necessário conferir esta versão no Colab hospedado e fazer a revisão visual do painel no seu navegador. As 12 fichas oficiais continuaram sem tabelas acessíveis em 25/11/2026; seus campos não foram declarados validados. Essas limitações estão registradas no relatório.
+A revisão foi executada localmente e no Colab hospedado: oito células sem erro e 27 testes aprovados. O painel exibiu os KPIs e a aba do modelo no Colab; todos os filtros e downloads não foram auditados visualmente. Veja repositorio/outputs/colab_validation.json. As 12 fichas oficiais continuaram sem tabelas acessíveis em 25/11/2026; seus campos não foram declarados validados. Essas limitações estão registradas no relatório.
 
 FONTES DAS INSTRUÇÕES
 Google Colab FAQ: https://research.google.com/colaboratory/intl/pt-BR/faq.html
