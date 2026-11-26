@@ -1,7 +1,7 @@
 # Guia de uso
 
 COMO USAR E ENTREGAR O PROJETO UFC
-Revisão de 25/11/2026 (versão 3: qualidade de código e banco de dados) — Igor de Andrade Albuquerque
+Revisão de 26/11/2026 (versão 4: previsão mensal e validação hospedada) — Igor de Andrade Albuquerque
 
 REPOSITÓRIO E PACOTE COMPLETO
 Código, SQL, documentação, painel e notebook desta revisão estão em https://github.com/igorrandrade/ufc. O pacote completo de entrega está em entrega/Fase2_UFC_Final.zip. As instruções de upload abaixo servem para cópias ou futuras atualizações.
@@ -38,8 +38,8 @@ Depois:
 1. Conecte o ambiente e selecione Ambiente de execução > Executar tudo.
 2. Use CPU; não precisa de GPU, chave de API ou Drive montado.
 3. O notebook cria as pastas, reconstitui os módulos e baixa os três CSVs da versão fixada. Ele verifica os hashes antes de calcular.
-4. Aguarde as oito células de código. Confirme a conclusão dos 27 testes, sem erros, e os resultados: 665 lutas; 514 concordâncias; 146 divergências; 5 empates; 77,88% de concordância.
-5. Na seção de painéis, use as cinco abas. A aba Conclusão responde a H1 e H2. A seção 3.1 reproduz a inferência exploratória.
+4. Aguarde as nove células de código. Confirme a conclusão dos 34 testes, sem erros, e os resultados: 665 lutas; 514 concordâncias; 146 divergências; 5 empates; 77,88% de concordância.
+5. Na seção de painéis, use as seis abas. A aba Conclusão responde a H1 e H2. A seção 3.1 reproduz a inferência exploratória.
 6. Salve uma cópia no Drive se quiser conservar a execução. O ambiente temporário do Colab pode ser apagado; salvar o notebook não guarda automaticamente todos os arquivos gerados.
 
 Se houver erro no download, não altere os hashes: os mesmos CSVs já estão em repositorio/data/raw/. No painel de arquivos do Colab, crie/abra /content/ufc_bi/data/raw, envie somente os três CSVs e execute novamente a partir da coleta. Se o painel interativo não aparecer, abra painel/Painel_UFC.html no seu computador; isso não substitui conferir a execução do notebook no Colab.
@@ -65,10 +65,10 @@ Se preferir Colab, ignore esta etapa. No terminal, entre na pasta repositorio/ e
 python -m pip install -r requirements.txt
 python -m src.run_all
 
-Esse comando refaz o pipeline, os modelos, os testes estatísticos, o painel e os 27 testes. Depois, abra docs/index.html. Não execute os .py dando dois cliques: eles usam importações de pacote. Para rodar apenas uma etapa, a ordem está no README.
+Esse comando refaz o pipeline, os modelos, os testes estatísticos, o painel e os 34 testes. Depois, abra docs/index.html. Não execute os .py dando dois cliques: eles usam importações de pacote. Para rodar apenas uma etapa, a ordem está no README.
 
 CONFERÊNCIAS QUE AINDA EXIGEM ATENÇÃO
-A revisão foi executada localmente e no Colab hospedado: oito células sem erro e 27 testes aprovados. O painel exibiu os KPIs e a aba do modelo no Colab; todos os filtros e downloads não foram auditados visualmente. Veja repositorio/outputs/colab_validation.json. As 12 fichas oficiais continuaram sem tabelas acessíveis em 25/11/2026; seus campos não foram declarados validados. Essas limitações estão registradas no relatório.
+A revisão foi executada localmente e no Colab hospedado: nove células sem erro e 34 testes aprovados. Em 26/11/2026, o Colab hospedado executou nove células, sem erro, com 34 testes aprovados. Foram observadas as seis abas, o filtro 2024/Dividida, a restauração dos totais, o caso Holland, uma busca sem resultados e os cinco empates. A exportação pela interface não foi confirmada; as saídas gravadas no notebook distribuído são locais. O registro hospedado está em outputs/colab_validation.json e docs/VALIDACAO_COLAB.md. As 12 fichas oficiais continuaram sem tabelas acessíveis em 25/11/2026; seus campos não foram declarados validados. Essas limitações estão registradas no relatório.
 
 FONTES DAS INSTRUÇÕES
 Google Colab FAQ: https://research.google.com/colaboratory/intl/pt-BR/faq.html
@@ -76,3 +76,6 @@ GitHub Upload: https://docs.github.com/en/repositories/working-with-files/managi
 
 MAPA DETALHADO DOS ARQUIVOS E ETL
 Consulte repositorio/docs/GUIA_ARQUIVOS_ETL.md no ZIP (docs/GUIA_ARQUIVOS_ETL.md no GitHub). Ele descreve cada arquivo e as regras de extração, transformação e limpeza.
+
+PREVISÃO MENSAL (VERSÃO 4)
+O notebook e a aba Previsão mensal avaliam o mês seguinte com informações apenas do passado. Veja src/forecast.py, outputs/forecast_2024.csv, outputs/forecast_metrics.json e outputs/forecast.png. A referência histórica teve menor erro que o Ridge. O guia completo de arquivos está em repositorio/docs/GUIA_ARQUIVOS_ETL.md.

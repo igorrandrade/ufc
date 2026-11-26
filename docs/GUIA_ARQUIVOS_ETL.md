@@ -27,19 +27,19 @@ Caminhos abaixo são relativos à pasta Fase2_UFC do ZIP. No GitHub, o prefixo r
 | `repositorio/README.md` | Página inicial do projeto: problema, resultados, instalação e links. |
 | `repositorio/PUBLICACAO.md` | Orientações de acesso e conferências finais. |
 | `repositorio/requirements.txt` | Dependências e versões para reproduzir o ambiente Python de referência. |
-| `repositorio/notebooks/UFC_BI_Analytics.ipynb` | Notebook autocontido do Colab com oito células de código e resultados. É o único arquivo que precisa ser enviado ao Colab. |
+| `repositorio/notebooks/UFC_BI_Analytics.ipynb` | Notebook autocontido do Colab com nove células de código e resultados. É o único arquivo que precisa ser enviado ao Colab. |
 | `repositorio/src/__init__.py` | Identifica src como pacote Python. |
 | `repositorio/src/pipeline.py` | Coleta os CSVs, verifica hashes, integra, limpa, seleciona lutas, cria SQLite e calcula KPIs. |
 | `repositorio/src/analytics.py` | Treina e avalia a regressão logística, compara a baseline e exporta probabilidades. |
 | `repositorio/src/inference.py` | Calcula intervalos de Wilson e testes bilaterais binomial e de Fisher, como complemento exploratório. |
 | `repositorio/src/conclusions.py` | Gera a conclusão em Markdown e HTML a partir dos KPIs calculados. |
-| `repositorio/src/visuals.py` | Gera quatro gráficos e o painel HTML a partir dos CSVs e JSONs. |
+| `repositorio/src/visuals.py` | Gera cinco gráficos e o painel HTML a partir dos CSVs e JSONs. |
 | `repositorio/src/dashboard_template.html` | Modelo do painel com CSS, JavaScript e espaços preenchidos por visuals.py; não é o painel final. |
-| `repositorio/src/run_all.py` | Executa preparação, modelo, inferência, visualizações e 27 testes em sequência. |
+| `repositorio/src/run_all.py` | Executa preparação, modelo, inferência, visualizações e 34 testes em sequência. |
 | `repositorio/src/source_check.py` | Tenta acessar as 12 fichas oficiais e registra a situação. Não valida automaticamente os campos da página. |
 | `repositorio/sql/schema.sql` | Cria tabelas, chaves primárias e estrangeiras, CHECKs, índices e três visões analíticas. |
 | `repositorio/sql/consultas.sql` | Sete consultas de KPIs, diferenças, estabilidade, casos, ranking e auditoria. |
-| `repositorio/tests/test_project.py` | 27 testes automatizados de regras, reconciliação, separação temporal e integridade do banco. |
+| `repositorio/tests/test_project.py` | 34 testes automatizados de regras, reconciliação, separação temporal e integridade do banco. |
 | `repositorio/data/raw/ufc_event_details.csv` | Catálogo original de eventos: nome, data, localização e URL. |
 | `repositorio/data/raw/ufc_fight_results.csv` | Resultados originais: atletas, vencedor, método, formato, round final e URL. |
 | `repositorio/data/raw/ufc_fight_stats.csv` | Estatísticas originais por atleta e round: golpes, tentativas, quedas, knockdowns e controle, entre outros. |
@@ -72,9 +72,9 @@ Caminhos abaixo são relativos à pasta Fase2_UFC do ZIP. No GitHub, o prefixo r
 | `repositorio/outputs/predictions_2024.csv` | 247 previsões individuais do teste, com probabilidade e resultado observado. |
 | `repositorio/outputs/inference.json` | Intervalos de confiança, p-valores, razão de chances e limites da inferência exploratória. |
 | `repositorio/outputs/source_checks.json` | Registro das tentativas de acesso às fichas oficiais; validação dos campos pendente. |
-| `repositorio/outputs/execution_validation.json` | Ambiente e resultado dos 27 testes do comando run_all. |
-| `repositorio/outputs/notebook_execution.json` | Evidência da execução das oito células e dos testes no notebook. |
-| `repositorio/outputs/colab_validation.json` | Registro separado da execução observada no Google Colab: oito células, 27 testes e resultados conferidos na interface. |
+| `repositorio/outputs/execution_validation.json` | Ambiente e resultado dos 34 testes do comando run_all. |
+| `repositorio/outputs/notebook_execution.json` | Evidência da execução das nove células e dos testes no notebook. |
+| `repositorio/outputs/colab_validation.json` | Registro separado da execução observada no Google Colab: nove células, 34 testes e resultados conferidos na interface. |
 | `repositorio/outputs/dashboard_tests.json` | Verificações da lógica do painel com DOM/JavaScript; não equivale a uma inspeção visual em navegador. |
 
 ## Como foi feita a extração
@@ -111,3 +111,19 @@ O alvo é a vitória ou derrota do líder em golpes. Estatísticas dos três rou
 ## Limite da validação
 
 Hashes confirmam a versão dos arquivos e os testes confirmam sua consistência interna. Eles não comprovam que todos os dados do espelho reproduzem a fonte primária. A conferência dos campos das 12 fichas oficiais permanece pendente por bloqueio de acesso. A conclusão deve conservar essa ressalva.
+
+## Extensão de previsão mensal
+
+| Arquivo adicional | Conteúdo |
+|---|---|
+| `src/forecast.py` | Previsão mensal com defasagens, seleção em 2023 e teste em 2024. |
+| `tests/test_forecast.py` | Sete testes de integridade temporal, denominadores e reprodução das previsões. |
+| `data/processed/monthly_concordance.csv` | 36 meses, com C, denominador e taxa observada. |
+| `outputs/forecast_2024.csv` | 12 previsões feitas com dados de meses anteriores, observados e referência. |
+| `outputs/forecast_metrics.json` | Protocolo, configuração, erros e projeção na última origem histórica. |
+| `outputs/forecast_model.json` | Escalas, coeficientes e intercepto do Ridge ajustado até 2023. |
+| `outputs/forecast.png` | Gráfico de taxas observadas e previstas em 2024. |
+
+A agregação mensal ocorre após a limpeza existente: somente C e D entram no denominador. Nenhuma taxa ausente é preenchida com zero. As entradas são defasadas em um, dois e três meses. A separação de treino, validação e teste respeita a ordem temporal.
+
+| `docs/VALIDACAO_COLAB.md` | Escopo e resultados observados na execução hospedada, controles conferidos e limites de exportação. |

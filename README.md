@@ -49,7 +49,7 @@ Abra `docs/index.html` no navegador. Os dados estão incorporados ao HTML e os f
 
 ### Google Colab
 
-O notebook `notebooks/UFC_BI_Analytics.ipynb` é autocontido: use Arquivo → Fazer upload do notebook e Ambiente de execução → Executar tudo. A primeira célula reconstitui os módulos; os CSVs ausentes são baixados do commit fixado. O notebook apresenta gráficos, painéis interativos, métricas e testes. Não exige GPU, chave de API ou serviço pago. Foi executado localmente em IPython e no Google Colab em 25/11/2026: oito células de código, zero erro e 27 testes aprovados. O registro da execução hospedada está em `outputs/colab_validation.json`.
+O notebook `notebooks/UFC_BI_Analytics.ipynb` é autocontido: use Arquivo → Fazer upload do notebook e Ambiente de execução → Executar tudo. A primeira célula reconstitui os módulos; os CSVs ausentes são baixados do commit fixado. O notebook apresenta gráficos, painéis interativos, métricas e testes. Não exige GPU, chave de API ou serviço pago. Foi executado localmente em IPython e no Google Colab em 26/11/2026: nove células de código, zero erro e 34 testes aprovados. O registro da execução hospedada está em `outputs/colab_validation.json`.
 
 O Colab também permite abrir o notebook pela aba GitHub ou pelo link abaixo. O GitHub exibe resultados estáticos, mas a interação deve ocorrer no Colab ou no HTML. O diretório `docs/` pode ser publicado pelo GitHub Pages como alternativa de acesso ao painel, sem substituir o notebook da plataforma escolhida.
 
@@ -66,7 +66,7 @@ O Colab também permite abrir o notebook pela aba GitHub ou pelo link abaixo. O 
 - `data/processed/`: lutas, rounds, exclusões, datas não resolvidas e amostra. O SQLite é gerado pelo pipeline e também acompanha o ZIP da entrega.
 - `outputs/`: KPIs, métricas, previsões, parâmetros do modelo, manifesto e registros de validação.
 - `docs/`: painel e documentação metodológica.
-- `tests/`: 27 testes (casos limites, reconciliação, restrições do banco e consultas SQL).
+- `tests/`: 34 testes (casos limites, reconciliação, restrições do banco e consultas SQL).
 
 ## Fonte e período
 
@@ -92,8 +92,12 @@ Repositório: https://github.com/igorrandrade/ufc
 
 Notebook no Colab: https://colab.research.google.com/github/igorrandrade/ufc/blob/main/notebooks/UFC_BI_Analytics.ipynb
 
-O notebook foi executado localmente e no Colab hospedado, com oito células sem erro e 27 testes aprovados. A amostra externa de 12 fichas segue pendente.
+O notebook foi executado localmente e no Colab hospedado, com nove células sem erro e 34 testes aprovados. A amostra externa de 12 fichas segue pendente.
 
 ## Etapas individuais e inferência complementar
 
 Ordem: `python -m src.pipeline`, `python -m src.analytics`, `python -m src.inference`, `python -m src.visuals`, `python -m unittest discover -s tests -v`. O comando `src.run_all` já executa todas. A inferência de Wilson/binomial/Fisher é exploratória: há atletas repetidos e o recorte não é uma amostra aleatória; os p-valores não comprovam causalidade.
+
+## Previsão mensal anterior ao período previsto
+
+A aba Previsão mensal complementa a classificação retrospectiva. O Ridge prevê C/(C+D) do mês seguinte usando os três meses anteriores, sem estatísticas do mês-alvo. Treino inicial: nove meses de 2022; validação: 2023; reajuste: 21 meses até 2023; teste: 12 previsões móveis de um passo em 2024, com coeficientes congelados. A referência é a concordância acumulada até o mês anterior. MAE no teste: Ridge 7,96 p.p.; referência 6,76 p.p. A referência também teve menor erro na validação. Não há evidência para substituí-la pelo Ridge. A série curta e a ausência de intervalo de previsão calibrado limitam o uso a planejamento exploratório. Código e previsões estão em `src/forecast.py` e `outputs/forecast_2024.csv`.

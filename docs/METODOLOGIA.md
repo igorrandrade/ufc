@@ -6,8 +6,8 @@
 2. Compreensão: eventos, resultados e estatísticas por atleta/round no espelho público.
 3. Preparação: verificar hashes, conciliar aliases por URL, padronizar textos e tipos, aplicar filtros e validar a grade completa de rounds.
 4. Modelagem: KPIs em SQLite/Python e regressão logística com sete diferenças entre líder e adversário.
-5. Avaliação: reconciliação SQL/Python, 27 testes, comparação temporal contra baseline e interpretação por tipo de decisão.
-6. Implantação: notebook Colab e painel exportado. Código, notebook e painel disponíveis em https://github.com/igorrandrade/ufc. A execução hospedada no Colab foi concluída em 25/11/2026, com oito células sem erro e 27 testes aprovados (`outputs/colab_validation.json`).
+5. Avaliação: reconciliação SQL/Python, 34 testes, comparação temporal contra baseline e interpretação por tipo de decisão.
+6. Implantação: notebook Colab e painel exportado. Código, notebook e painel disponíveis em https://github.com/igorrandrade/ufc. A execução hospedada no Colab foi concluída em 26/11/2026, com nove células sem erro e 34 testes aprovados (`outputs/colab_validation.json`).
 
 ## KPIs de negócio
 
@@ -52,3 +52,7 @@ A conclusão em [CONCLUSAO.md](CONCLUSAO.md) responde à pergunta central, H1, H
 ## Inferência exploratória complementar
 
 `src/inference.py` calcula Wilson a 95%, teste binomial bilateral contra 50% e Fisher bilateral para a tabela [[424,94],[90,52]]. O notebook executa esta etapa antes das visualizações. Os testes assumem independência, não ajustam atletas repetidos e não transformam o censo do recorte em amostra aleatória. Os valores e pressupostos ficam em `outputs/inference.json`. Fontes: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binomtest.html e https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.fisher_exact.html.
+
+## Previsão mensal anterior ao período previsto
+
+A aba Previsão mensal complementa a classificação retrospectiva. O Ridge prevê C/(C+D) do mês seguinte usando os três meses anteriores, sem estatísticas do mês-alvo. Treino inicial: nove meses de 2022; validação: 2023; reajuste: 21 meses até 2023; teste: 12 previsões móveis de um passo em 2024, com coeficientes congelados. A referência é a concordância acumulada até o mês anterior. MAE no teste: Ridge 7,96 p.p.; referência 6,76 p.p. A referência também teve menor erro na validação. Não há evidência para substituí-la pelo Ridge. A série curta e a ausência de intervalo de previsão calibrado limitam o uso a planejamento exploratório. Código e previsões estão em `src/forecast.py` e `outputs/forecast_2024.csv`.
