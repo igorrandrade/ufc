@@ -12,7 +12,7 @@ Revisão final da versão 4, concluída em 26/11/2026. A nota é atribuída pelo
 ## Correções finais
 
 - Descrição da arquitetura alinhada à leitura de CSV/JSON feita pelo painel.
-- Slide 9 apresenta H1/H2, IC de Wilson e p-valores exploratórios do agregado, com ressalva de independência; não sugere testes por ano. O slide 11 apresenta a previsão mensal, a comparação de erros e a decisão recomendada.
+- Slide 12 apresenta H1/H2, IC de Wilson e p-valores exploratórios do agregado, com ressalva de independência; não sugere testes por ano. O slide 11 apresenta a previsão mensal, a comparação de erros e a decisão recomendada.
 - Paginação do relatório revisada, preservando o template.
 - SQL, funções documentadas, modelo ER e 34 testes da versão 4 preservados.
 - Fontes incorporadas ao notebook sincronizadas com o repositório. A última célula registra a execução e distingue IPython local de Colab.
