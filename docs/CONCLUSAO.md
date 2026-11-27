@@ -1,4 +1,4 @@
-# Conclusão e respostas à Fase 1
+# Conclusão da análise
 
 ## Resposta à pergunta central
 
@@ -6,7 +6,7 @@ Sim, liderar em golpes significativos conectados foi um indicador associado à v
 
 ## H1 recebe apoio descritivo
 
-A concordância de 77,88% superou em 27,88 pontos percentuais a referência de 50% definida na Fase 1. Escolher o líder em golpes acertou mais resultados históricos que a referência de escolher aleatoriamente um dos dois atletas. A inferência exploratória complementar é apresentada separadamente e não muda o critério descritivo planejado.
+A concordância de 77,88% superou em 27,88 pontos percentuais a referência aleatória de 50%. Escolher o líder em golpes acertou mais resultados históricos que a referência de escolher aleatoriamente um dos dois atletas. A inferência exploratória complementar é apresentada separadamente e não muda o critério descritivo planejado.
 
 ## H2 recebe apoio descritivo
 
@@ -28,13 +28,13 @@ Os resultados mostram utilidade da liderança em golpes para interpretar o resul
 
 Usar a contagem como evidência contextual, informando período, tipo de decisão e denominador. Nas divididas, 52/142 lutas (36,62%) tiveram vitória do atleta com menos golpes, o que exige cuidado ao interpretar apenas o total. O caso Holland × Della Maddalena ilustra uma dessas divergências; a conclusão provém do conjunto de lutas, não desse exemplo.
 
-## Cumprimento dos objetivos da Fase 1
+## Cobertura e validação dos dados
 
-A base relacional foi integrada; concordâncias, divergências, empates e denominadores foram calculados; as decisões foram comparadas no conjunto e em cada ano; o painel permite consultar luta e rounds. O quarto objetivo específico permanece parcialmente atendido: as consultas foram reconciliadas internamente, mas a conferência dos campos das 12 fichas oficiais segue pendente por bloqueio de acesso. Os resultados referem-se ao espelho versionado e devem ser revistos se essa conferência identificar discrepâncias.
+A base relacional foi integrada; concordâncias, divergências, empates e denominadores foram calculados; as decisões foram comparadas no conjunto e em cada ano; o painel permite consultar luta e rounds. As consultas foram reconciliadas internamente, mas a conferência dos campos das 12 fichas oficiais segue pendente por bloqueio de acesso. Os resultados referem-se ao espelho versionado e devem ser revistos se essa conferência identificar discrepâncias.
 
 ## Papel complementar do Analytics
 
-O modelo com sete variáveis acrescenta uma análise preditiva retrospectiva exigida na Fase 2. Sua melhora agregada sobre a regra de escolher o líder não mede a contribuição isolada dos golpes significativos e não é a evidência usada para responder a H1 e H2. As hipóteses são respondidas pelas contagens e proporções acima.
+O modelo com sete variáveis acrescenta uma análise preditiva retrospectiva. Sua melhora agregada sobre a regra de escolher o líder não mede a contribuição isolada dos golpes significativos e não é a evidência usada para responder a H1 e H2. As hipóteses são respondidas pelas contagens e proporções acima.
 
 ## Previsão do mês seguinte
 

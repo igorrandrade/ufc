@@ -1,4 +1,4 @@
-"""Gera a conclusão da Fase 1 (Markdown e HTML) diretamente dos KPIs calculados.
+"""Gera a conclusão da análise (Markdown e HTML) diretamente dos KPIs calculados.
 
 Os números do texto nunca são digitados à mão: vêm de outputs/kpis.json, o que
 impede divergência entre relatório, painel e dados. Se os dados deixarem de
@@ -29,7 +29,7 @@ def build():
          'mas não garantiu o resultado. Esta conclusão descreve o UFC de 2022–2024, com três rounds completos e decisão unânime ou dividida.'),
         ('H1 recebe apoio descritivo',
          f'A concordância de {fmt(a["concordance"])}% superou em {fmt(k["H1_excess_pp"])} pontos percentuais '
-         'a referência de 50% definida na Fase 1. Escolher o líder em golpes acertou mais resultados históricos que a referência '
+         'a referência aleatória de 50%. Escolher o líder em golpes acertou mais resultados históricos que a referência '
          'de escolher aleatoriamente um dos dois atletas. A inferência exploratória complementar é apresentada separadamente e não muda o critério descritivo planejado.'),
         ('H2 recebe apoio descritivo',
          f'Nas decisões unânimes, o líder venceu {u["C"]}/{u["C"] + u["D"]} lutas ({fmt(u["concordance"])}%); '
@@ -53,14 +53,14 @@ def build():
          f'{d["D"]}/{d["C"] + d["D"]} lutas ({fmt(d["divergence"])}%) tiveram vitória do atleta com menos golpes, '
          'o que exige cuidado ao interpretar apenas o total. O caso Holland × Della Maddalena ilustra uma dessas divergências; '
          'a conclusão provém do conjunto de lutas, não desse exemplo.'),
-        ('Cumprimento dos objetivos da Fase 1',
+        ('Cobertura e validação dos dados',
          'A base relacional foi integrada; concordâncias, divergências, empates e denominadores foram calculados; '
          'as decisões foram comparadas no conjunto e em cada ano; o painel permite consultar luta e rounds. '
-         'O quarto objetivo específico permanece parcialmente atendido: as consultas foram reconciliadas internamente, '
+         'As consultas foram reconciliadas internamente, '
          'mas a conferência dos campos das 12 fichas oficiais segue pendente por bloqueio de acesso. '
          'Os resultados referem-se ao espelho versionado e devem ser revistos se essa conferência identificar discrepâncias.'),
         ('Papel complementar do Analytics',
-         'O modelo com sete variáveis acrescenta uma análise preditiva retrospectiva exigida na Fase 2. '
+         'O modelo com sete variáveis acrescenta uma análise preditiva retrospectiva. '
          'Sua melhora agregada sobre a regra de escolher o líder não mede a contribuição isolada dos golpes significativos '
          'e não é a evidência usada para responder a H1 e H2. As hipóteses são respondidas pelas contagens e proporções acima.')
     ]
@@ -78,8 +78,8 @@ def build():
         paragraphs.append(('Previsão do mês seguinte',
             f"A extensão temporal prevê a taxa de concordância mensal antes de observar o mês-alvo. No teste de 2024, o erro absoluto médio foi {fmt(forecast['model']['mae_pp'])} pontos percentuais no Ridge e {fmt(forecast['baseline']['mae_pp'])} na referência histórica. "
             'A referência simples foi melhor, inclusive na validação de 2023. Não se recomenda substituir essa referência pelo Ridge com a evidência disponível. Esta previsão serve ao planejamento editorial e não identifica o vencedor individual de uma luta.'))
-    md = '# Conclusão e respostas à Fase 1\n\n' + '\n\n'.join(f'## {title}\n\n{text}' for title, text in paragraphs)
-    html = '<h2>Conclusão e respostas à Fase 1</h2><p class="caption">Recorte completo de 2022–2024; esta conclusão não muda com os filtros do Panorama.</p>' + ''.join(
+    md = '# Conclusão da análise\n\n' + '\n\n'.join(f'## {title}\n\n{text}' for title, text in paragraphs)
+    html = '<h2>Conclusão da análise</h2><p class="caption">Recorte completo de 2022–2024; esta conclusão não muda com os filtros do Panorama.</p>' + ''.join(
         f'<h3>{escape(title)}</h3><p>{escape(text)}</p>' for title, text in paragraphs)
     (ROOT / 'docs/CONCLUSAO.md').write_text(md, encoding='utf-8')
     return md, html

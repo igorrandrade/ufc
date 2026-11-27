@@ -1,6 +1,6 @@
 """Previsão mensal da concordância, feita antes de observar o mês previsto.
 
-Complemento à classificação retrospectiva e às hipóteses descritivas da Fase 1.
+Complemento à classificação retrospectiva e às hipóteses descritivas do estudo.
 Alvo: C/(C+D) no mês seguinte, para o mesmo recorte de decisões elegíveis.
 Treino: 2022 (após aquecimento de três meses); validação: 2023; teste: 2024.
 Cada previsão usa somente indicadores de meses encerrados. A avaliação de 2024

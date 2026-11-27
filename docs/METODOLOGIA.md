@@ -7,7 +7,7 @@
 3. Preparação: verificar hashes, conciliar aliases por URL, padronizar textos e tipos, aplicar filtros e validar a grade completa de rounds.
 4. Modelagem: KPIs em SQLite/Python e regressão logística com sete diferenças entre líder e adversário.
 5. Avaliação: reconciliação SQL/Python, 34 testes, comparação temporal contra baseline e interpretação por tipo de decisão.
-6. Implantação: notebook Colab e painel exportado. Código, notebook e painel disponíveis em https://github.com/igorrandrade/ufc. A execução hospedada no Colab foi concluída em 26/11/2026, com nove células sem erro e 34 testes aprovados (`outputs/colab_validation.json`).
+6. Implantação: notebook Colab e painel exportado. Código, notebook e painel disponíveis em https://github.com/igorrandrade/ufc.
 
 ## KPIs de negócio
 
@@ -43,11 +43,11 @@ Responsável proposto: autor/analista editorial. Atualização por lote quando h
 
 Antes de publicação de uma afirmação editorial, conferir a ficha e o resultado oficial. Sugestão de uso: consultar divergências, examinar rounds e contexto e redigir com denominador e período. Não há mensuração real de redução de tempo, aumento de audiência ou retorno financeiro neste projeto.
 
-Referências técnicas: Aulas 6 a 10 fornecidas pela disciplina; Google Colab FAQ; scikit-learn LogisticRegression e Common pitfalls. Fonte esportiva: UFCStats via snapshot Greco1899 indicado no README.
+Referências técnicas: Google Colab FAQ; scikit-learn LogisticRegression e Common pitfalls. Fonte esportiva: UFCStats via snapshot Greco1899 indicado no README.
 
-## Respostas à Fase 1
+## Conclusão reproduzível
 
-A conclusão em [CONCLUSAO.md](CONCLUSAO.md) responde à pergunta central, H1, H2, robustez e objetivos. Ela é gerada por `src/conclusions.py` a partir dos KPIs efetivamente calculados. O projeto mantém o recorte e o delineamento observacional da Fase 1. A substituição do Streamlit pelo Colab atende às plataformas permitidas na Fase 2; o modelo preditivo é uma extensão exigida nesta fase e não altera as hipóteses originais.
+[CONCLUSAO.md](CONCLUSAO.md) apresenta a resposta à pergunta central, H1, H2 e as limitações. O módulo `src/conclusions.py` gera esse texto diretamente dos KPIs calculados.
 
 ## Inferência exploratória complementar
 
@@ -56,3 +56,16 @@ A conclusão em [CONCLUSAO.md](CONCLUSAO.md) responde à pergunta central, H1, H
 ## Previsão mensal anterior ao período previsto
 
 A aba Previsão mensal complementa a classificação retrospectiva. O Ridge prevê C/(C+D) do mês seguinte usando os três meses anteriores, sem estatísticas do mês-alvo. Treino inicial: nove meses de 2022; validação: 2023; reajuste: 21 meses até 2023; teste: 12 previsões móveis de um passo em 2024, com coeficientes congelados. A referência é a concordância acumulada até o mês anterior. MAE no teste: Ridge 7,96 p.p.; referência 6,76 p.p. A referência também teve menor erro na validação. Não há evidência para substituí-la pelo Ridge. A série curta e a ausência de intervalo de previsão calibrado limitam o uso a planejamento exploratório. Código e previsões estão em `src/forecast.py` e `outputs/forecast_2024.csv`.
+
+
+## Extração, transformação e limpeza
+
+A coleta usa três CSVs do espelho Greco1899: eventos, resultados e estatísticas por atleta e round. O commit e os hashes SHA-256 esperados estão fixados em `src/pipeline.py`. O processo baixa arquivos ausentes, preserva os brutos e rejeita divergências de hash.
+
+A integração relaciona a data ao evento e concilia aliases pela URL. O vencedor vem de OUTCOME na ordem dos atletas em BOUT. Campos como SIG.STR. são separados em acertos e tentativas; CTRL é convertido em segundos. Valores ausentes não viram zero.
+
+A deduplicação reduz 669 registros elegíveis de resultados a 665 lutas e 4.014 registros de estatísticas a 3.990 linhas de atleta e round. Duas linhas globais sem data identificável ficam em `unresolved_dates.csv`. Os filtros exigem 2022–2024, três rounds previstos e completos, decisão unânime ou dividida e vencedor identificável.
+
+Cada luta exige dois atletas e três rounds. Os testes verificam chaves, contagens, acertos não superiores às tentativas e integridade relacional. Os cinco empates em golpes permanecem no conjunto válido e ficam fora do denominador da concordância e do classificador.
+
+O armazenamento gera CSVs tratados e SQLite em `data/processed/`. O manifesto e o relatório de qualidade ficam em `outputs/`. O painel incorpora CSVs e JSONs no HTML, sem consultar o banco pelo navegador. A conferência externa dos campos das 12 fichas oficiais permanece pendente, conforme `outputs/source_checks.json`; hashes e testes internos não substituem essa verificação.

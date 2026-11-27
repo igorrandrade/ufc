@@ -25,7 +25,7 @@ import pandas as pd
 # --------------------------------------------------------------------------
 ROOT = Path(__file__).resolve().parents[1]
 
-# Commit do espelho Greco1899/scrape_ufc_stats identificado na Fase 1.
+# Commit do espelho Greco1899/scrape_ufc_stats fixado para reprodução.
 COMMIT = 'c742842f29466758fedc3906dbad28d6d320a8da'
 
 # SHA-256 esperado de cada arquivo bruto: qualquer alteração interrompe o pipeline.
@@ -35,7 +35,7 @@ HASHES = {
     'ufc_fight_stats.csv': 'f5b316d5e745bd89da921b2c9711ec9209c2fa39dcbcd80bcb063b62d9175bcb',
 }
 
-# Recorte analítico definido na Fase 1.
+# Recorte analítico definido para o estudo.
 YEARS = (2022, 2024)
 VALID_METHODS = ['Decision - Unanimous', 'Decision - Split']
 
@@ -44,7 +44,7 @@ VALID_METHODS = ['Decision - Unanimous', 'Decision - Split']
 # 1. Coleta
 # --------------------------------------------------------------------------
 def collect():
-    """Baixa somente os arquivos ausentes e exige os hashes do snapshot da Fase 1.
+    """Baixa somente os arquivos ausentes e exige os hashes do snapshot versionado.
 
     Retorna um dicionário {nome do arquivo: DataFrame de strings}. Todos os campos
     são lidos como texto (dtype=str) para que valores vazios nunca virem zero.

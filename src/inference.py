@@ -4,7 +4,7 @@
 * H1: teste binomial bilateral da concordância global contra 50% (acaso).
 * H2: teste exato de Fisher bilateral, unânimes x divididas.
 
-O plano da Fase 1 é descritivo; estes testes são um complemento exploratório
+O delineamento do estudo é descritivo; estes testes são um complemento exploratório
 e não alteram a resposta às hipóteses. Lê outputs/kpis.json e grava
 outputs/inference.json.   Execute da raiz:  python -m src.inference
 """
@@ -48,7 +48,7 @@ def run():
     odds, p = stats.fisher_exact([[u['C'], u['D']], [d['C'], d['D']]], alternative='two-sided')
     out.update(H2_fisher_odds_ratio=float(odds), H2_fisher_p=float(p),
                alternative='two-sided', confidence_level=0.95, wilson_z=float(stats.norm.ppf(0.975)),
-               interpretation='Análise exploratória adicional ao plano descritivo da Fase 1.',
+               interpretation='Análise exploratória adicional ao delineamento descritivo do estudo.',
                limitations='O recorte reúne todos os confrontos elegíveis do snapshot, não uma amostra aleatória. '
                            'Há atletas repetidos entre lutas; os testes não ajustam essa dependência nem fatores de '
                            'confusão. ICs e p-valores são condicionais ao modelo de independência, não validação '
